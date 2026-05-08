@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/notbuk.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <title>Mobix</title>
 
@@ -49,7 +49,7 @@
           <li class="pages">
             <a href="./product.html">Məhsullar</a>
             <ul class="dropdown-menu">
-              <li><a href="./category.html">Kateqoriyalar</a></li>
+              <!-- <li><a href="./category.html">Kateqoriyalar</a></li> -->
               <li><a href="./new.html">Yenilər</a></li>
           
             </ul>
@@ -92,73 +92,96 @@
 
 
 
+<div class="product-page">
 
-<!-- xerite -->
+  <div class="product-wrapper">
 
+    <!-- BACK -->
+    <a href="./new.html" class="back-btn">
+      <i class="fa-solid fa-arrow-left"></i> Geri qayıt
+    </a>
 
-<section class="contact-map">
-  <div class="container">
+    <!-- PRODUCT GRID -->
+    <div class="product-grid">
 
-    <h2 class="map-title">Ünvanımız</h2>
-
-    <div class="map-container">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194473.5237684378!2d49.690150483102435!3d40.39447551124535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d6bd6211cf9%3A0x343f6b5e7ae56c6b!2sBaku!5e0!3m2!1sen!2saz!4v1777261656719!5m2!1sen!2saz"
-        width="100%" 
-        height="400"
-        style="border:0;"
-        loading="lazy">
-      </iframe>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-<!-- is saati -->
-
-<section class="contact">
-
-  <div class="container">
-
-    <h2 class="contact-title">Bizimlə əlaqə</h2>
-    <p class="contact-subtitle">Sualınız varsa, bizə yazın</p>
-
-    <div class="contact-grid">
+      <!-- IMAGE -->
+      <div class="product-left">
+        <img src="./img/new-img/new3.png">
+      </div>
 
       <!-- INFO -->
-      <div class="contact-info">
+      <div class="product-right">
 
-        <div class="info-card">
-          <i class="fa-solid fa-phone"></i>
-          <h4>Telefon</h4>
-          <p>+994 50 468 67 67</p>
+        <!-- TITLE -->
+        <h1>Apple MacBook Air 15 M4 Silver MW1H3RU/A</h1>
+
+        <!-- RATING -->
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <span>(5)</span>
         </div>
 
-        <div class="info-card">
-          <i class="fa-solid fa-envelope"></i>
-          <h4>Email</h4>
-          <p>info@mobix.az</p>
+        <!-- PRICE -->
+        <div class="price-box">
+          <del id="old-price">3299 AZN</del>
+          <h2 id="product-price">2899 AZN</h2>
+          <span class="discount">-12%</span>
         </div>
 
-        <div class="info-card">
-          <i class="fa-solid fa-clock"></i>
-          <h4>İş saatı</h4>
-          <p>09:00 - 20:00</p>
+        <!-- STORAGE / CONFIG -->
+        <div class="storage-select">
+          <h4>Konfiqurasiya</h4>
+
+          <div class="storage-buttons">
+
+            <button class="storage-btn active" data-size="256">
+              8GB / 256GB
+            </button>
+
+            <button class="storage-btn" data-size="512">
+              16GB / 512GB
+            </button>
+
+            <button class="storage-btn" data-size="1tb">
+              16GB / 1TB
+            </button>
+
+          </div>
         </div>
 
-      </div>
+        <!-- DESCRIPTION -->
+        <p class="desc">
+          Apple MacBook Air 15 M4 — ultra nazik və güclü laptopdur. 
+          M4 çipi ilə yüksək performans və enerji qənaəti təqdim edir.
+        </p>
 
-      <!-- FORM -->
-      <div class="contact-form">
+        <p class="desc">
+          Dizayn, proqramlaşdırma, dizayn və gündəlik istifadə üçün ideal seçimdir.
+        </p>
 
-        <input type="text" placeholder="Adınız">
-        <input type="email" placeholder="Email">
-        <textarea placeholder="Mesajınız"></textarea>
+        <!-- FEATURES -->
+        <div class="features">
+          <div><i class="fa-solid fa-microchip"></i> Apple M4 chip</div>
+          <div><i class="fa-solid fa-display"></i> 15.3" Liquid Retina</div>
+          <div><i class="fa-solid fa-battery-full"></i> 18 saat batareya</div>
+          <div><i class="fa-solid fa-laptop"></i> Ultra Slim Design</div>
+          <div><i class="fa-solid fa-snowflake"></i> Fanless sistem</div>
+          <div><i class="fa-solid fa-wifi"></i> WiFi 6E</div>
+        </div>
 
-        <button>Göndər</button>
+        <!-- INFO -->
+        <div class="info">
+          <span>macOS</span>
+          <span>Apple M4</span>
+          <span>15-inch</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn">Səbətə əlavə et</button>
 
       </div>
 
@@ -166,15 +189,80 @@
 
   </div>
 
-</section>
+</div>
 
 
 
 
+<div class="reviews container">
+
+  <h3>Müştəri rəyləri</h3>
+
+  <!-- REVIEW 1 -->
+  <div class="review-card">
+    <div class="review-top">
+      <span class="name">Elvin Muradov</span>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+    </div>
+    <p>M4 çipi çox sürətlidir, proqramlaşdırma və multitasking üçün əladır <i class="fa-solid fa-thumbs-up"></i></p>
+  </div>
+
+  <!-- REVIEW 2 -->
+  <div class="review-card">
+    <div class="review-top">
+      <span class="name">Aysel Kərimova</span>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+    </div>
+    <p>Ekran çox keyfiyyətlidir, dizayn isə çox premium hiss verir.</p>
+  </div>
+
+  <!-- REVIEW 3 -->
+  <div class="review-card">
+    <div class="review-top">
+      <span class="name">Rəşad H.</span>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+    </div>
+    <p>Video editing və dizayn işləri üçün çox rahat işləyir, səssiz və güclüdür.</p>
+  </div>
+
+  <!-- REVIEW 4 -->
+  <div class="review-card">
+    <div class="review-top">
+      <span class="name">Nərmin Seyidova</span>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+    </div>
+    <p>Batareyası çox uzundur, bütün gün şarjsız işlətmək olur <i class="fa-solid fa-battery-full"></i></p>
+  </div>
+
+</div>
 
 
 
-
+  
   <!-- footer -->
 
 
@@ -394,10 +482,8 @@
 
     });
   </script>
+  
 
-
-
-
-  </body>
-
+  <script src="./javascript/notbuk.js"></script>
+    </body>
 </html>

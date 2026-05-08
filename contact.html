@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-  <link rel="stylesheet" href="./iphone.css">
+  <link rel="stylesheet" href="./css/contact.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./css/iphone.css">
   <title>Mobix</title>
 
 
@@ -19,96 +18,147 @@
 <body>
 
 
-<div class="product-page">
+  <div class="container container-back">
 
-  <div class="product-wrapper">
+    <div class="site-header">
 
-    <!-- BACK -->
-    <a href="./new.html" class="back-btn">
-      <i class="fa-solid fa-arrow-left"></i> Geri qayıt
-    </a>
-
-    <!-- PRODUCT GRID -->
-    <div class="product-grid">
-
-      <!-- IMAGE -->
-      <div class="product-left">
-        <img src="./img/new-img/new1.webp" alt="iPhone 17 Pro Max">
+      <div>
+        <a href="#">
+          <img src="./img/2-removebg-preview (1).png" alt="">
+        </a>
       </div>
+
+
+
+      <div class="search-box desktop-search">
+        <input type="text" placeholder="Search">
+        <i class="search-icon fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class=" navbar-container">
+
+        <ul class="d-flex list-unstyled gap-3">
+
+          <li class="mobile-search">
+            <div class="search-box">
+              <input type="text" placeholder="Search">
+              <i class="search-icon fa-solid fa-magnifying-glass"></i>
+            </div>
+          </li>
+          <li><a href="./index.html">Ana səhifə</a></li>
+          <li class="pages">
+            <a href="./product.html">Məhsullar</a>
+            <ul class="dropdown-menu">
+              <!-- <li><a href="./category.html">Kateqoriyalar</a></li> -->
+              <li><a href="./new.html">Yenilər</a></li>
+          
+            </ul>
+          </li>
+
+
+
+          <li><a href="./about.html">Haqqımızda</a></li>
+
+          <li><a href="./contact.html">Əlaqə</a></li>
+          <li>
+            <a href="./discount.html">
+              Endirimlər<i class="fa-solid fa-fire"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./approval.html">
+              <i class="color-h-c fa-regular fa-heart"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="./card.html">
+              <i class="color-h-c fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="burger">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+<!-- xerite -->
+
+
+<section class="contact-map">
+  <div class="container">
+
+    <h2 class="map-title">Ünvanımız</h2>
+
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194473.5237684378!2d49.690150483102435!3d40.39447551124535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d6bd6211cf9%3A0x343f6b5e7ae56c6b!2sBaku!5e0!3m2!1sen!2saz!4v1777261656719!5m2!1sen!2saz"
+        width="100%" 
+        height="400"
+        style="border:0;"
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- is saati -->
+
+<section class="contact">
+
+  <div class="container">
+
+    <h2 class="contact-title">Bizimlə əlaqə</h2>
+    <p class="contact-subtitle">Sualınız varsa, bizə yazın</p>
+
+    <div class="contact-grid">
 
       <!-- INFO -->
-      <div class="product-right">
+      <div class="contact-info">
 
-        <!-- TITLE -->
-        <h1>iPhone 17 Pro Max Cosmic Orange</h1>
-
-        <!-- RATING -->
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <span>(5)</span>
+        <div class="info-card">
+          <i class="fa-solid fa-phone"></i>
+          <h4>Telefon</h4>
+          <p>+994 50 468 67 67</p>
         </div>
 
-        <!-- PRICE -->
-        <div class="price-box">
-          <del id="old-price">4200 AZN</del>
-          <h2 id="product-price">3589 AZN</h2>
-          <span class="discount">-15%</span>
+        <div class="info-card">
+          <i class="fa-solid fa-envelope"></i>
+          <h4>Email</h4>
+          <p>info@mobix.az</p>
         </div>
 
-        <!-- STORAGE -->
-        <div class="storage-select">
-          <h4>Yaddaş seçimi</h4>
-
-          <div class="storage-buttons">
-
-            <button class="storage-btn active" data-size="256">
-              256GB
-            </button>
-
-            <button class="storage-btn" data-size="512">
-              512GB
-            </button>
-
-            <button class="storage-btn" data-size="1tb">
-              1TB
-            </button>
-
-          </div>
+        <div class="info-card">
+          <i class="fa-solid fa-clock"></i>
+          <h4>İş saatı</h4>
+          <p>09:00 - 20:00</p>
         </div>
 
-        <!-- DESCRIPTION -->
-        <p class="desc">
-          iPhone 17 Pro Max — Apple-ın ən güclü flagship modelidir.
-          Titanium korpus və A19 Pro çip ilə yüksək performans təqdim edir.
-        </p>
+      </div>
 
-        <p class="desc">
-          Foto, video və gaming üçün ideal premium cihazdır.
-        </p>
+      <!-- FORM -->
+      <div class="contact-form">
 
-        <!-- FEATURES -->
-        <div class="features">
-          <div><i class="fa-solid fa-microchip"></i> A19 Pro chip</div>
-          <div><i class="fa-solid fa-camera"></i> 48MP Pro kamera</div>
-          <div><i class="fa-solid fa-mobile-screen"></i> 6.9" OLED</div>
-          <div><i class="fa-solid fa-video"></i> 4K video</div>
-          <div><i class="fa-solid fa-battery-full"></i> Uzun batareya</div>
-          <div><i class="fa-solid fa-shield"></i> Titanium body</div>
-        </div>
+        <input type="text" placeholder="Adınız">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Mesajınız"></textarea>
 
-        <!-- INFO -->
-        <div class="info">
-          <span>iOS</span>
-          <span>A19 Pro</span>
-          <span>5G</span>
-        </div>
-
-        <!-- BUTTON -->
-        <button class="btn">Səbətə əlavə et</button>
+        <button>Göndər</button>
 
       </div>
 
@@ -116,78 +166,8 @@
 
   </div>
 
-</div>
+</section>
 
-
-
-<!-- rey -->
- 
-<!-- REVIEWS -->
-<div class="reviews container">
-
-  <h3>Müştəri rəyləri</h3>
-
-  <!-- REVIEW 1 -->
-  <div class="review-card">
-    <div class="review-top">
-      <span class="name">Elvin M.</span>
-      <div class="stars">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-      </div>
-    </div>
-    <p>Telefon çox sürətlidir, kamera inanılmaz keyfiyyətdə çəkir. Çox razı qaldım <i class="fa-solid fa-thumbs-up"></i></p>
-  </div>
-
-  <!-- REVIEW 2 -->
-  <div class="review-card">
-    <div class="review-top">
-      <span class="name">Aysel K.</span>
-      <div class="stars">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-regular fa-star"></i>
-      </div>
-    </div>
-    <p>Dizayn çox premiumdur, amma qiymət bir az yüksəkdir.</p>
-  </div>
-
-  <!-- REVIEW 3 -->
-  <div class="review-card">
-    <div class="review-top">
-      <span class="name">Rəşad H.</span>
-      <div class="stars">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-regular fa-star"></i>
-      </div>
-    </div>
-    <p>Batareya və performans çox yaxşıdır, oyunlar problemsiz işləyir.</p>
-  </div>
-
-  <!-- REVIEW 4 -->
-  <div class="review-card">
-    <div class="review-top">
-      <span class="name">Nigar S.</span>
-      <div class="stars">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-      </div>
-    </div>
-    <p>Ən yaxşı iPhone modelidir, xüsusilə kamera superdir <i class="fa-solid fa-camera"></i></p>
-  </div>
-
-</div>
 
 
 
@@ -414,6 +394,10 @@
 
     });
   </script>
-  <script src="./js-new/iphone.js"></script>
-    </body>
+
+
+
+
+  </body>
+
 </html>

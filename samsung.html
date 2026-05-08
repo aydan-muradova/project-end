@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-  <link rel="stylesheet" href="./css/card.css">
+  <link rel="stylesheet" href="./css/samsung.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <title>Mobix</title>
 
@@ -49,7 +49,7 @@
           <li class="pages">
             <a href="./product.html">Məhsullar</a>
             <ul class="dropdown-menu">
-              <li><a href="./category.html">Kateqoriyalar</a></li>
+              <!-- <li><a href="./category.html">Kateqoriyalar</a></li> -->
               <li><a href="./new.html">Yenilər</a></li>
           
             </ul>
@@ -93,27 +93,181 @@
 
 
 
-<h2 class="container shop-text">Səbətim</h2>
+<div class="product-page">
 
-<!-- ACTION BAR -->
-<div class="container cart-actions">
+  <div class="product-wrapper">
 
-  <button id="select-all">Hamısını seç</button>
-  <button id="checkout">Səbəti təsdiqlə</button>
+    <!-- BACK -->
+    <a href="./new.html" class="back-btn">
+      <i class="fa-solid fa-arrow-left"></i> Geri qayıt
+    </a>
+
+    <!-- PRODUCT GRID -->
+    <div class="product-grid">
+
+      <!-- IMAGE -->
+      <div class="product-left">
+        <img src="./img/new-img/61UnzIc+97L._AC_SX679_.jpg">
+      </div>
+
+      <!-- INFO -->
+      <div class="product-right">
+
+        <!-- TITLE -->
+        <h1>Samsung Galaxy S26 Ultra (SM-S948B) 16GB / Black</h1>
+
+        <!-- RATING -->
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <span>(5)</span>
+        </div>
+
+        <!-- PRICE -->
+  <div class="price-box">
+  <del id="old-price">2209 AZN</del>
+<h2 id="product-price">1869 AZN</h2>
+
+  <span class="discount">-14%</span>
+</div>
+
+        <!-- STORAGE OPTIONS -->
+        <div class="storage-select">
+
+          <h4>Yaddaş seçimi</h4>
+
+      <div class="storage-buttons">
+
+  <button class="storage-btn active" data-size="256">
+    256GB
+  </button>
+
+  <button class="storage-btn" data-size="512">
+    512GB
+  </button>
+
+  <button class="storage-btn" data-size="1tb">
+    1TB
+  </button>
 
 </div>
 
-<!-- CART -->
-<div class="container" id="cart-container"></div>
+        </div>
 
-<!-- TOTAL -->
-<div class="container cart-total">
-  Ümumi: <span id="total-price">0 ₼</span>
+        <!-- DESCRIPTION -->
+        <p class="desc">
+          Samsung Galaxy S26 Ultra — Samsung-un ən premium flagship modelidir.
+          Snapdragon Elite prosessoru, AI funksiyaları və peşəkar kamera sistemi ilə maksimum performans təqdim edir.
+        </p>
+
+        <p class="desc">
+          Bu cihaz gaming, foto/video çəkiliş və gündəlik multitasking üçün ideal seçimdir.
+        </p>
+
+        <!-- FEATURES -->
+        <div class="features">
+          <div><i class="fa-solid fa-microchip"></i> Snapdragon Elite chip</div>
+          <div><i class="fa-solid fa-camera"></i> 200MP Ultra kamera</div>
+          <div><i class="fa-solid fa-mobile-screen"></i> 6.9" Dynamic AMOLED</div>
+          <div><i class="fa-solid fa-pen"></i> S Pen dəstəyi</div>
+          <div><i class="fa-solid fa-battery-full"></i> 5000mAh batareya</div>
+          <div><i class="fa-solid fa-shield"></i> Titanium frame</div>
+        </div>
+
+        <!-- INFO -->
+        <div class="info">
+          <span>16GB RAM</span>
+          <span>Dynamic AMOLED</span>
+          <span>5G</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn">Səbətə əlavə et</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </div>
 
 
-<!-- footer -->
+<!-- REVIEWS -->
 
+<div class="reviews container">
+
+  <h3>Müştəri rəyləri</h3>
+
+  <!-- REVIEW 1 -->
+  <div class="review-card">
+    <div class="review-top">
+      <span class="name">Murad A.</span>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+    </div>
+    <p>Kamera və zoom keyfiyyəti inanılmazdır. Ekran çox axıcı işləyir <i class="fa-solid fa-thumbs-up"></i></p>
+  </div>
+
+  <!-- REVIEW 2 -->
+  <div class="review-card">
+    <div class="review-top">
+      <span class="name">Leyla R.</span>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+    </div>
+    <p>S Pen funksiyası çox rahatdır, dizayn isə premium hiss etdirir.</p>
+  </div>
+
+  <!-- REVIEW 3 -->
+  <div class="review-card">
+    <div class="review-top">
+      <span class="name">Kamran T.</span>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+    </div>
+    <p>Gaming performansı çox güclüdür, ən ağır oyunlar belə problemsiz işləyir.</p>
+  </div>
+
+  <!-- REVIEW 4 -->
+  <div class="review-card">
+    <div class="review-top">
+      <span class="name">Nərmin S.</span>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+    </div>
+    <p>Samsung-un ən yaxşı Ultra modelidir, xüsusilə kamera sistemi əladır <i class="fa-solid fa-camera"></i></p>
+  </div>
+
+</div>
+
+
+
+
+  <!-- footer -->
 
 
   <footer class="footer">
@@ -202,7 +356,7 @@
 
 
 
-  
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
 
@@ -334,8 +488,9 @@
   </script>
 
 
-  <script src="./cart.js"></script>
 
-    
-</body>
+<!-- gb -->
+ 
+  <script src="./javascript/samsung.js"></script>
+    </body>
 </html>
