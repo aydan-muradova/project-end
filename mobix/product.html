@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="./css/product.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <title>Mobix</title>
+
+
+
+
+</head>
+
+<body>
+
+
+  <div class="container container-back">
+
+    <div class="site-header">
+
+      <div>
+        <a href="#">
+          <img src="./img/2-removebg-preview (1).png" alt="">
+        </a>
+      </div>
+
+
+
+      <div class="search-box desktop-search">
+        <input type="text" class="search-input" placeholder="Search">
+        <i class="search-icon fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class=" navbar-container">
+
+        <ul class="d-flex list-unstyled gap-3">
+
+          <li class="mobile-search">
+            <div class="search-box">
+              <input type="text" placeholder="Search">
+              <i class="search-icon fa-solid fa-magnifying-glass"></i>
+            </div>
+          </li>
+          <li><a href="./index.html">Ana səhifə</a></li>
+          <li class="pages">
+            <a href="./product.html">Məhsullar</a>
+            <ul class="dropdown-menu">
+              <li><a href="./category.html">Kateqoriyalar</a></li>
+              <li><a href="./new.html">Yenilər</a></li>
+          
+            </ul>
+          </li>
+
+
+
+          <li><a href="./about.html">Haqqımızda</a></li>
+
+          <li><a href="./contact.html">Əlaqə</a></li>
+          <li>
+            <a href="./discount.html">
+              Endirimlər<i class="fa-solid fa-fire"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./approval.html">
+              <i class="color-h-c fa-regular fa-heart"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="./card.html">
+              <i class="color-h-c fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="burger">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+<div class="container pro-filter">
+  <h2 class="products-title-filter">Bütün Məhsullar</h2>
+</div>
+
+<!-- filter -->
+
+  <div class="container filter-cards">
+
+    <!-- FILTER -->
+    <aside class="filter">
+
+      <h3>Filter</h3>
+
+      <!-- CATEGORY -->
+      <div class="filter-group">
+        <div class="filter-title toggle">Kateqoriya <span>▼</span></div>
+
+        <div class="filter-options">
+          <button class="filter-btn active" data-filter="all">Hamısı</button>
+          <button class="filter-btn" data-filter="phone"><i class="fa-solid fa-mobile-screen-button"></i>
+            Telefon</button>
+          <button class="filter-btn" data-filter="tablet"><i class="fa-solid fa-tablet-screen-button"></i>
+            Planşet</button>
+          <button class="filter-btn" data-filter="laptop"><i class="fa-solid fa-laptop"></i> Kompüter</button>
+          <button class="filter-btn" data-filter="accessory"><i class="fa-solid fa-plug"></i> <i
+              class="fa-solid fa-headphones"></i> Aksesuar</button>
+        </div>
+      </div>
+
+      <!-- PRICE -->
+      <div class="filter-group">
+
+        <div class="filter-title toggle">Qiymət <span>▼</span></div>
+
+        <div class="filter-options ">
+
+          <button class="price-filter" data-max="500">0 - 500 ₼</button>
+          <button class="price-filter" data-max="1000">500 - 1000 ₼</button>
+          <button class="price-filter" data-max="2000">1000 - 2000 ₼</button>
+          <button class="price-filter" data-max="999999">2000 ₼ +</button>
+
+        </div>
+      </div>
+
+    </aside>
+
+
+    <!-- PRODUCTS -->
+
+
+
+    <div class="products" id="products">
+
+
+
+
+      <div class="card" data-category="laptop" data-price="1200" data-discount="30">
+
+        <!-- TOP (badge + fav) -->
+        <div class="card-top">
+          <!-- <span class="badge">-15%</span> -->
+
+          <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- IMAGE -->
+        <img src=".//img/products-img/pro1.webp" alt="">
+
+        <!-- NAME -->
+        <h3 class="name">Notbuk HUAWEI MateBook D14 53014MUB</h3>
+
+        <!-- STARS -->
+        <div class="stars">★★★★★</div>
+
+        <!-- PRICE + STORAGE -->
+        <div class="price-row">
+
+          <div class="prices">
+            <!-- <span class="old-price">229.99 ₼</span> -->
+            <span class="new-price">1599₼</span>
+          </div>
+
+          <div class="storage">
+            <!-- <span class="storage-btn active" data-price="1200">128GB</span> -->
+    <span class="storage-btn" data-price="1350">512GB</span>
+    <span class="storage-btn" data-price="1500">1TB</span>
+          </div>
+
+        </div>
+
+        <!-- INSTALLMENT -->
+        <div class="installment">
+          <span class="month" data-month="6">6 ay</span>
+          <span class="month" data-month="9">9 ay</span>
+          <span class="month active" data-month="12">12 ay</span>
+        </div>
+
+        <!-- MONTHLY -->
+        <div class="monthly-price">
+          <span class="month-count">12 ay</span>
+          <span class="amount">88 ₼</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn add-to-cart" >
+          <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+        </button>
+
+      </div>
+
+
+
+
+      <!-- box2 -->
+
+      <div class="card" data-category="accessory" data-price="1200" data-discount="30">
+
+        <!-- TOP (badge + fav) -->
+        <div class="card-top">
+       
+
+          <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- IMAGE -->
+        <img src=".//img/products-img/pro2.webp" alt="">
+
+        <!-- NAME -->
+        <h3 class="name">Adapter Apple 20W USB-C MHJE3ZM/A</h3>
+
+        <!-- STARS -->
+        <div class="stars">★★★★★</div>
+
+        <!-- PRICE + STORAGE -->
+        <div class="price-row">
+
+          <div class="prices">
+            <!-- <span class="old-price">59.99 ₼</span> -->
+            <span class="new-price">69.99 ₼</span>
+          </div>
+
+          <!-- <div class="storage">
+    <span class="storage-btn active" data-price="1200">128GB</span>
+    <span class="storage-btn" data-price="1350">256GB</span>
+    <span class="storage-btn" data-price="1500">512GB</span>
+  </div> -->
+
+        </div>
+
+        <!-- INSTALLMENT -->
+        <div class="installment">
+          <span class="month" data-month="6">6 ay</span>
+          <span class="month" data-month="9">9 ay</span>
+          <span class="month active" data-month="12">12 ay</span>
+        </div>
+
+        <!-- MONTHLY -->
+        <div class="monthly-price">
+          <span class="month-count">12 ay</span>
+          <span class="amount">5 ₼</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn add-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+        </button>
+
+      </div>
+
+
+      <!-- box3 -->
+
+      <div class="card" data-category="accessory" data-price="1200" data-discount="30">
+
+        <!-- TOP (badge + fav) -->
+        <div class="card-top">
+          <!-- <span class="badge">-18%</span> -->
+
+          <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- IMAGE -->
+        <img src=".//img/products-img/pro3.png" alt="">
+
+        <!-- NAME -->
+        <h3 class="name">Smart saat Apple Watch Ultra 3 Cellular 49mm</h3>
+
+        <!-- STARS -->
+        <div class="stars">★★★★★</div>
+
+        <!-- PRICE + STORAGE -->
+        <div class="price-row">
+
+          <div class="prices">
+            <!-- <span class="old-price">190 ₼</span> -->
+            <span class="new-price">2169 ₼</span>
+          </div>
+
+          <!-- <div class="storage">
+            <span class="storage-btn active" data-price="1200">128GB</span>
+            <span class="storage-btn" data-price="1350">256GB</span>
+            <span class="storage-btn" data-price="1500">512GB</span>
+          </div> -->
+
+        </div>
+
+        <!-- INSTALLMENT -->
+        <div class="installment">
+          <span class="month" data-month="6">6 ay</span>
+          <span class="month" data-month="9">9 ay</span>
+          <span class="month active" data-month="12">12 ay</span>
+        </div>
+
+        <!-- MONTHLY -->
+        <div class="monthly-price">
+          <span class="month-count">12 ay</span>
+          <span class="amount">100 ₼</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn add-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+        </button>
+
+      </div>
+      <!-- box4 -->
+
+
+
+      <div class="card" data-category="phone" data-price="1200" data-discount="30">
+
+        <!-- TOP (badge + fav) -->
+        <div class="card-top">
+          <!-- <span class="badge">-25%</span> -->
+
+          <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- IMAGE -->
+        <img src=".//img/products-img/pro4.webp" alt="">
+
+        <!-- NAME -->
+        <h3 class="name">HONOR 600 Lite 8 Desert Gold </h3>
+
+        <!-- STARS -->
+        <div class="stars">★★★★★</div>
+
+        <!-- PRICE + STORAGE -->
+        <div class="price-row">
+
+          <div class="prices">
+            <!-- <span class="old-price">109.99 ₼</span> -->
+            <span class="new-price">799 ₼</span>
+          </div>
+
+          <div class="storage">
+    <span class="storage-btn active" data-price="1200">128GB</span>
+    <span class="storage-btn" data-price="1350">256GB</span>
+    <span class="storage-btn" data-price="1500">512GB</span>
+  </div>
+
+        </div>
+
+        <!-- INSTALLMENT -->
+        <div class="installment">
+          <span class="month" data-month="6">6 ay</span>
+          <span class="month" data-month="9">9 ay</span>
+          <span class="month active" data-month="12">12 ay</span>
+        </div>
+
+        <!-- MONTHLY -->
+        <div class="monthly-price">
+          <span class="month-count">12 ay</span>
+          <span class="amount">100 ₼</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn add-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+        </button>
+
+      </div>
+
+
+      <!-- box5 -->
+
+      <div class="card" data-category="accessory" data-price="1200" data-discount="30">
+
+        <!-- TOP (badge + fav) -->
+        <div class="card-top">
+    
+
+          <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- IMAGE -->
+        <img src=".//img/products-img/pro5.webp" alt="">
+
+        <!-- NAME -->
+        <h3 class="name">Qulaqıq Samsung Galaxy Buds4 SM-R540</h3>
+
+        <!-- STARS -->
+        <div class="stars">★★★★★</div>
+
+        <!-- PRICE + STORAGE -->
+        <div class="price-row">
+
+          <div class="prices">
+            <!-- <span class="old-price">569 ₼</span> -->
+            <span class="new-price">299.99 ₼</span>
+          </div>
+
+          <!-- <div class="storage">
+            <span class="storage-btn active" data-price="1200">128GB</span>
+            <span class="storage-btn" data-price="1350">256GB</span>
+            <span class="storage-btn" data-price="1500">512GB</span>
+          </div> -->
+
+        </div>
+
+        <!-- INSTALLMENT -->
+        <div class="installment">
+          <span class="month" data-month="6">6 ay</span>
+          <span class="month" data-month="9">9 ay</span>
+          <span class="month active" data-month="12">12 ay</span>
+        </div>
+
+        <!-- MONTHLY -->
+        <div class="monthly-price">
+          <span class="month-count">12 ay</span>
+          <span class="amount">100 ₼</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn add-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+        </button>
+
+      </div>
+
+
+
+      <!-- box6 -->
+
+      <div class="card" data-category="accessory" data-price="1200" data-discount="30">
+
+        <!-- TOP (badge + fav) -->
+        <div class="card-top">
+          <!-- <span class="badge">-40%</span> -->
+
+          <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- IMAGE -->
+        <img src=".//img/products-img/pro6.webp" alt="">
+
+        <!-- NAME -->
+        <h3 class="name">HUAWEI WATCH Kids 4 Pro Pink 55027637</h3>
+
+        <!-- STARS -->
+        <div class="stars">★★★★★</div>
+
+        <!-- PRICE + STORAGE -->
+        <div class="price-row">
+
+          <div class="prices">
+            <!-- <span class="old-price">89.99 ₼</span> -->
+            <span class="new-price">219.99 ₼</span>
+          </div>
+
+          <!-- <div class="storage">
+    <span class="storage-btn active" data-price="1200">128GB</span>
+    <span class="storage-btn" data-price="1350">256GB</span>
+    <span class="storage-btn" data-price="1500">512GB</span>
+  </div> -->
+
+        </div>
+
+        <!-- INSTALLMENT -->
+        <div class="installment">
+          <span class="month" data-month="6">6 ay</span>
+          <span class="month" data-month="9">9 ay</span>
+          <span class="month active" data-month="12">12 ay</span>
+        </div>
+
+        <!-- MONTHLY -->
+        <div class="monthly-price">
+          <span class="month-count">12 ay</span>
+          <span class="amount">100 ₼</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn add-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+        </button>
+
+      </div>
+      <!-- box7 -->
+
+      <div class="card" data-category="phone" data-price="1200" data-discount="30">
+
+        <!-- TOP (badge + fav) -->
+        <div class="card-top">
+          <!-- <span class="badge">-15%</span> -->
+
+          <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- IMAGE -->
+        <img src=".//img/products-img/pro7.webp" alt="">
+
+        <!-- NAME -->
+        <h3 class="name">Samsung Galaxy S25 FE (SM-S731) Dark Blue</h3>
+
+        <!-- STARS -->
+        <div class="stars">★★★★★</div>
+
+        <!-- PRICE + STORAGE -->
+        <div class="price-row">
+
+          <div class="prices">
+            <!-- <span class="old-price">340 ₼</span> -->
+            <span class="new-price">1459 ₼</span>
+          </div>
+
+          <div class="storage">
+            <!-- <span class="storage-btn active" data-price="1200">128GB</span> -->
+            <span class="storage-btn" data-price="1350">256GB</span>
+            <span class="storage-btn" data-price="1500">512GB</span>
+          </div>
+
+        </div>
+
+        <!-- INSTALLMENT -->
+        <div class="installment">
+          <span class="month" data-month="6">6 ay</span>
+          <span class="month" data-month="9">9 ay</span>
+          <span class="month active" data-month="12">12 ay</span>
+        </div>
+
+        <!-- MONTHLY -->
+        <div class="monthly-price">
+          <span class="month-count">12 ay</span>
+          <span class="amount">100 ₼</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn add-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+        </button>
+
+      </div>
+
+
+      <!-- box8 -->
+      <div class="card" data-category="accessory" data-price="1200" data-discount="30">
+
+        <!-- TOP (badge + fav) -->
+        <div class="card-top">
+        
+
+          <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- IMAGE -->
+        <img src=".//img/products-img/pro8.webp" alt="">
+
+        <!-- NAME -->
+        <h3 class="name">Universal tutacaq Satechi R1 ST-R1M Space Grey</h3>
+
+        <!-- STARS -->
+        <div class="stars">★★★★★</div>
+
+        <!-- PRICE + STORAGE -->
+        <div class="price-row">
+
+          <div class="prices">
+            <!-- <span class="old-price">639.99 ₼</span> -->
+            <span class="new-price">89.99 ₼</span>
+          </div>
+
+          <!-- <div class="storage">
+            <span class="storage-btn active" data-price="1200">128GB</span>
+            <span class="storage-btn" data-price="1350">256GB</span>
+            <span class="storage-btn" data-price="1500">512GB</span>
+          </div> -->
+
+        </div>
+
+        <!-- INSTALLMENT -->
+        <div class="installment">
+          <span class="month" data-month="6">6 ay</span>
+          <span class="month" data-month="9">9 ay</span>
+          <span class="month active" data-month="12">12 ay</span>
+        </div>
+
+        <!-- MONTHLY -->
+        <div class="monthly-price">
+          <span class="month-count">12 ay</span>
+          <span class="amount">100 ₼</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn add-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+        </button>
+
+      </div>
+      <!-- box9 -->
+      <div class="card" data-category="laptop" data-price="1200" data-discount="30">
+
+        <!-- TOP (badge + fav) -->
+        <div class="card-top">
+          <!-- <span class="badge">-15%</span> -->
+
+          <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- IMAGE -->
+        <img src=".//img/products-img/pro9.webp" alt="">
+
+        <!-- NAME -->
+        <h3 class="name">Notbuk Lenovo ThinkPad T16 Gen 3 (21MN00BLFW)</h3>
+
+        <!-- STARS -->
+        <div class="stars">★★★★★</div>
+
+        <!-- PRICE + STORAGE -->
+        <div class="price-row">
+
+          <div class="prices">
+            <!-- <span class="old-price">639.99 ₼</span> -->
+            <span class="new-price">2999 ₼</span>
+          </div>
+
+          <div class="storage">
+            <!-- <span class="storage-btn active" data-price="1200">128GB</span> -->
+            <span class="storage-btn" data-price="1350">512GB</span>
+            <span class="storage-btn" data-price="1500">1TB</span>
+          </div>
+
+        </div>
+
+        <!-- INSTALLMENT -->
+        <div class="installment">
+          <span class="month" data-month="6">6 ay</span>
+          <span class="month" data-month="9">9 ay</span>
+          <span class="month active" data-month="12">12 ay</span>
+        </div>
+
+        <!-- MONTHLY -->
+        <div class="monthly-price">
+          <span class="month-count">12 ay</span>
+          <span class="amount">100 ₼</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn add-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+        </button>
+
+      </div>
+
+
+
+           <!-- box10 -->
+      <div class="card" data-category="accessory" data-price="1200" data-discount="30">
+
+        <!-- TOP (badge + fav) -->
+        <div class="card-top">
+          <!-- <span class="badge">-15%</span> -->
+
+          <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- IMAGE -->
+        <img src=".//img/products-img/pro10.png" alt="">
+
+        <!-- NAME -->
+        <h3 class="name">Smart saat Samsung Galaxy Watch8 SM-L330NDAACIS Dark Gray</h3>
+
+        <!-- STARS -->
+        <div class="stars">★★★★★</div>
+
+        <!-- PRICE + STORAGE -->
+        <div class="price-row">
+
+          <div class="prices">
+            <!-- <span class="old-price">639.99 ₼</span> -->
+            <span class="new-price">649.99 ₼</span>
+          </div>
+<!-- 
+          <div class="storage">
+             <span class="storage-btn active" data-price="1200">128GB</span> 
+            <span class="storage-btn" data-price="1350">512GB</span>
+            <span class="storage-btn" data-price="1500">1TB</span>
+          </div> -->
+
+        </div>
+
+        <!-- INSTALLMENT -->
+        <div class="installment">
+          <span class="month" data-month="6">6 ay</span>
+          <span class="month" data-month="9">9 ay</span>
+          <span class="month active" data-month="12">12 ay</span>
+        </div>
+
+        <!-- MONTHLY -->
+        <div class="monthly-price">
+          <span class="month-count">12 ay</span>
+          <span class="amount">100 ₼</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn add-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+        </button>
+
+      </div>
+
+
+
+
+
+      
+           <!-- box11 -->
+      <div class="card" data-category="accessory" data-price="1200" data-discount="30">
+
+        <!-- TOP (badge + fav) -->
+        <div class="card-top">
+          <!-- <span class="badge">-15%</span> -->
+
+          <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- IMAGE -->
+        <img src=".//img/products-img/pro11.png" alt="">
+
+        <!-- NAME -->
+        <h3 class="name">Mouse Logitech Signature M650L OFF-White WL</h3>
+
+        <!-- STARS -->
+        <div class="stars">★★★★★</div>
+
+        <!-- PRICE + STORAGE -->
+        <div class="price-row">
+
+          <div class="prices">
+            <!-- <span class="old-price">639.99 ₼</span> -->
+            <span class="new-price">74.99 ₼</span>
+          </div>
+<!-- 
+          <div class="storage">
+             <span class="storage-btn active" data-price="1200">128GB</span> 
+            <span class="storage-btn" data-price="1350">512GB</span>
+            <span class="storage-btn" data-price="1500">1TB</span>
+          </div> -->
+
+        </div>
+
+        <!-- INSTALLMENT -->
+        <div class="installment">
+          <span class="month" data-month="6">6 ay</span>
+          <span class="month" data-month="9">9 ay</span>
+          <span class="month active" data-month="12">12 ay</span>
+        </div>
+
+        <!-- MONTHLY -->
+        <div class="monthly-price">
+          <span class="month-count">12 ay</span>
+          <span class="amount">100 ₼</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn add-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+        </button>
+
+      </div>
+
+
+
+                 <!-- box12 -->
+      <div class="card" data-category="tablet" data-price="1200" data-discount="30">
+
+        <!-- TOP (badge + fav) -->
+        <div class="card-top">
+          <!-- <span class="badge">-15%</span> -->
+
+          <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- IMAGE -->
+        <img src=".//img/products-img/pro12.png" alt="">
+
+        <!-- NAME -->
+        <h3 class="name">OPPO Pad 3/ OPD2406 Silver</h3>
+
+        <!-- STARS -->
+        <div class="stars">★★★★★</div>
+
+        <!-- PRICE + STORAGE -->
+        <div class="price-row">
+
+          <div class="prices">
+            <!-- <span class="old-price">639.99 ₼</span> -->
+            <span class="new-price">899 ₼</span>
+          </div>
+
+          <div class="storage">
+             <span class="storage-btn active" data-price="1200">128GB</span> 
+            <span class="storage-btn" data-price="1350">256GB</span>
+        
+          </div>
+
+        </div>
+
+        <!-- INSTALLMENT -->
+        <div class="installment">
+          <span class="month" data-month="6">6 ay</span>
+          <span class="month" data-month="9">9 ay</span>
+          <span class="month active" data-month="12">12 ay</span>
+        </div>
+
+        <!-- MONTHLY -->
+        <div class="monthly-price">
+          <span class="month-count">12 ay</span>
+          <span class="amount">100 ₼</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn add-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+        </button>
+
+      </div>
+
+
+             <!-- box13 -->
+      <div class="card" data-category="accessory" data-price="1200" data-discount="30">
+
+        <!-- TOP (badge + fav) -->
+        <div class="card-top">
+          <!-- <span class="badge">-15%</span> -->
+
+          <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- IMAGE -->
+        <img src=".//img/products-img/pro13.webp" alt="">
+
+        <!-- NAME -->
+        <h3 class="name">Gaming Mouse Logitech G305 Lightspeer Wireless</h3>
+
+        <!-- STARS -->
+        <div class="stars">★★★★★</div>
+
+        <!-- PRICE + STORAGE -->
+        <div class="price-row">
+
+          <div class="prices">
+            <!-- <span class="old-price">639.99 ₼</span> -->
+            <span class="new-price">119.99 ₼</span>
+          </div>
+<!-- 
+          <div class="storage">
+             <span class="storage-btn active" data-price="1200">128GB</span> 
+            <span class="storage-btn" data-price="1350">256GB</span>
+        
+          </div> -->
+
+        </div>
+
+        <!-- INSTALLMENT -->
+        <div class="installment">
+          <span class="month" data-month="6">6 ay</span>
+          <span class="month" data-month="9">9 ay</span>
+          <span class="month active" data-month="12">12 ay</span>
+        </div>
+
+        <!-- MONTHLY -->
+        <div class="monthly-price">
+          <span class="month-count">12 ay</span>
+          <span class="amount">100 ₼</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn add-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+        </button>
+
+      </div>
+
+
+
+    </div>
+
+    </section>
+
+  </div>
+  <!-- daha cox goster -->
+<div class="load-more-wrapper">
+  <button id="loadMoreBtn" class="load-more-btn">
+    <span>Daha çox göstər</span>
+    <i class="fa-solid fa-chevron-down"></i>
+  </button>
+</div>
+
+
+
+
+<!-- video -->
+ <section class="video-section">
+  <div class="container">
+
+    <div class="video-header">
+   
+   <h2>Almadan Əvvəl <span>İzlə</span></h2>
+    </div>
+
+    
+
+
+<div class="video-grid">
+
+  <div class="video-wrapper">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/2gYqEi8-am4?si=HYo6rsGXsBlNOXO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <div class="video-wrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/q0aFOxT6TNw?si=AteALwrJn6VJyRvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <div class="video-wrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oPRhIlgiPN4?si=n1JaKvNORBU8DsaS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- niye biz -->
+ <section class="features container">
+  
+  <div class="features-header">
+    <h2>Niyə Bizi Seçməlisiniz?</h2>
+    <p class="subtitle">
+      Rahat, sürətli və etibarlı alış təcrübəsi üçün doğru ünvandasınız
+    </p>
+  </div>
+
+  <div class="features-grid">
+
+    <div class="feature">
+      <div class="icon">🚚</div>
+      <h3>Sürətli Çatdırılma</h3>
+      <p>Sifarişiniz qısa müddətdə ünvanınıza çatdırılır</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">🔒</div>
+      <h3>Təhlükəsiz Ödəniş</h3>
+      <p>Bütün ödənişlər qorunan sistem üzərindən həyata keçirilir</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">⏱</div>
+      <h3>7/24 Dəstək</h3>
+      <p>İstənilən vaxt suallarınıza cavab verməyə hazırıq</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- qutu -->
+
+
+
+<section class=" container shop-section">
+
+  <div class="shop-container">
+    <h2 class="shop-title">Ən çox satılanlar</h2>
+
+    <div class="shop-wrapper">
+
+      <div class="shop-slider" id="shopSlider">
+
+        <!-- CARD -->
+          <div class="shop-card">
+          <div class="shop-top">
+            <span class="shop-badge">-10%</span>
+          </div>
+
+          <img src="./img/products-img/pr1.jpg" alt="">
+
+          <h3 class="shop-name">Sony WH-1000XM6</h3>
+          <div class="shop-stars">★★★★★</div>
+
+          <div class="shop-price-row">
+            <div class="shop-prices">
+              <span class="shop-old">810 ₼</span>
+              <span class="shop-new">778 ₼</span>
+            </div>
+
+   
+          </div>
+
+          <div class="shop-installment">
+            <span class="shop-month">6 ay</span>
+            <span class="shop-month">9 ay</span>
+            <span class="shop-month active">12 ay</span>
+          </div>
+            <div class="monthly-price">
+    <span class="month-count">12 ay</span>
+    <span class="amount">65 ₼</span>
+  </div>
+
+         <div> <button class="shop-btn">Səbətə əlavə et</button></div> 
+        </div>
+
+        <!-- CARD2 -->
+        <div class="shop-card">
+          <div class="shop-top">
+            <span class="shop-badge">-10%</span>
+          </div>
+
+          <img src="./img/products-img/pr2.jpg" alt="">
+
+          <h3 class="shop-name">Anne Klein Women's Genuine Watch</h3>
+          <div class="shop-stars">★★★★★</div>
+
+          <div class="shop-price-row">
+            <div class="shop-prices">
+              <span class="shop-old"> 70 ₼</span>
+              <span class="shop-new">54 ₼</span>
+            </div>
+
+          </div>
+
+          <div class="shop-installment">
+            <span class="shop-month">6 ay</span>
+            <span class="shop-month">9 ay</span>
+            <span class="shop-month active">12 ay</span>
+          </div>
+               <div class="monthly-price">
+    <span class="month-count">12 ay</span>
+    <span class="amount">5 ₼</span>
+  </div>
+
+  <div> <button class="shop-btn">Səbətə əlavə et</button></div> 
+        </div>
+
+               <!-- CARD3 -->
+        <div class="shop-card">
+          <div class="shop-top">
+            <span class="shop-badge">-10%</span>
+          </div>
+
+          <img src="./img/products-img/pr3.jpg" alt="">
+
+          <h3 class="shop-name">Apple Iphone 17 </h3>
+          <div class="shop-stars">★★★★★</div>
+
+          <div class="shop-price-row">
+            <div class="shop-prices">
+              <span class="shop-old">1336 ₼</span>
+              <span class="shop-new">1195 ₼</span>
+            </div>
+
+            <div class="shop-storage">
+              <span class="shop-storage-btn active" data-price="1599">256GB</span>
+              <span class="shop-storage-btn" data-price="1750">512GB</span>
+            </div>
+          </div>
+
+          <div class="shop-installment">
+            <span class="shop-month">6 ay</span>
+            <span class="shop-month">9 ay</span>
+            <span class="shop-month active">12 ay</span>
+          </div>
+     <div class="monthly-price">
+    <span class="month-count">12 ay</span>
+    <span class="amount">100 ₼</span>
+  </div>
+        <div> <button class="shop-btn">Səbətə əlavə et</button></div> 
+        </div>
+
+               <!-- CARD4 -->
+        <div class="shop-card">
+          <div class="shop-top">
+            <span class="shop-badge">-10%</span>
+          </div>
+
+          <img src="./img/products-img/pr4.webp" alt="">
+
+          <h3 class="shop-name">Lenovo Idea Tab</h3>
+          <div class="shop-stars">★★★★★</div>
+
+          <div class="shop-price-row">
+            <div class="shop-prices">
+              <span class="shop-old">492 ₼</span>
+              <span class="shop-new">389 ₼</span>
+            </div>
+
+            <div class="shop-storage">
+              <span class="shop-storage-btn active" data-price="1599">256GB</span>
+              <span class="shop-storage-btn" data-price="1750">512GB</span>
+            </div>
+          </div>
+
+          <div class="shop-installment">
+            <span class="shop-month">6 ay</span>
+            <span class="shop-month">9 ay</span>
+            <span class="shop-month active">12 ay</span>
+          </div>
+          
+     <div class="monthly-price">
+    <span class="month-count">12 ay</span>
+    <span class="amount">32 ₼</span>
+  </div>
+   <div> <button class="shop-btn">Səbətə əlavə et</button></div> 
+        </div>
+
+               <!-- CARD5 -->
+        <div class="shop-card">
+          <div class="shop-top">
+            <span class="shop-badge">-10%</span>
+          </div>
+
+          <img src="./img/products-img/pr5.webp" alt="">
+
+          <h3 class="shop-name">Lenovo Legion 5i-Gaming Laptop</h3>
+          <div class="shop-stars">★★★★★</div>
+
+          <div class="shop-price-row">
+            <div class="shop-prices">
+              <span class="shop-old">3100 ₼</span>
+              <span class="shop-new">2838 ₼</span>
+            </div>
+
+            <div class="shop-storage">
+              <span class="shop-storage-btn active" data-price="1599">512GB</span>
+              <span class="shop-storage-btn" data-price="1750">1TB</span>
+            </div>
+          </div>
+
+          <div class="shop-installment">
+            <span class="shop-month">6 ay</span>
+            <span class="shop-month">9 ay</span>
+            <span class="shop-month active">12 ay</span>
+          </div>
+     <div class="monthly-price">
+    <span class="month-count">12 ay</span>
+    <span class="amount">237 ₼</span>
+  </div>
+    <div> <button class="shop-btn">Səbətə əlavə et</button></div>
+        </div>
+
+               <!-- CARD6 -->
+        <div class="shop-card">
+          <div class="shop-top">
+            <span class="shop-badge">-10%</span>
+          </div>
+
+          <img src="./img/products-img/pr6.jpg" alt="">
+
+          <h3 class="shop-name">Smart Watch for Women</h3>
+          <div class="shop-stars">★★★★★</div>
+
+          <div class="shop-price-row">
+            <div class="shop-prices">
+              <span class="shop-old">230 ₼</span>
+              <span class="shop-new">169 ₼</span>
+            </div>
+
+          </div>
+
+          <div class="shop-installment">
+            <span class="shop-month">6 ay</span>
+            <span class="shop-month">9 ay</span>
+            <span class="shop-month active">12 ay</span>
+          </div>
+     <div class="monthly-price">
+    <span class="month-count">12 ay</span>
+    <span class="amount">14 ₼</span>
+  </div>
+          <div> <button class="shop-btn">Səbətə əlavə et</button></div> 
+        </div>
+               <!-- CARD7 -->
+        <div class="shop-card">
+          <div class="shop-top">
+            <span class="shop-badge">-10%</span>
+          </div>
+
+          <img src="./img/products-img/pr7.webp" alt="">
+
+          <h3 class="shop-name">Samsung Galaxy Tab S10</h3>
+          <div class="shop-stars">★★★★★</div>
+
+          <div class="shop-price-row">
+            <div class="shop-prices">
+              <span class="shop-old">849 ₼</span>
+              <span class="shop-new">713 ₼</span>
+            </div>
+
+            <div class="shop-storage">
+              <span class="shop-storage-btn active" data-price="1599">256GB</span>
+              <span class="shop-storage-btn" data-price="1750">512GB</span>
+            </div>
+          </div>
+
+          <div class="shop-installment">
+            <span class="shop-month">6 ay</span>
+            <span class="shop-month">9 ay</span>
+            <span class="shop-month active">12 ay</span>
+          </div>
+     <div class="monthly-price">
+    <span class="month-count">12 ay</span>
+    <span class="amount">59 ₼</span>
+  </div>
+         <div> <button class="shop-btn">Səbətə əlavə et</button></div> 
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="shop-buttons">
+      <button onclick="slideLeft()" class="shop-slide-btn">‹</button>
+      <button onclick="slideRight()" class="shop-slide-btn">›</button>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+  <!-- footer -->
+
+
+  <footer class="footer">
+
+    <div class="container">
+      <div class="footer-container">
+
+        <!-- LOGO -->
+        <div class="footer-col">
+          <h3 class="logo">Mobix</h3>
+          <p>
+            Smart cihazlar və aksesuarlar üçün etibarlı ünvan.
+            Keyfiyyət, sürət və münasib qiymət bir arada.
+          </p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-col">
+          <h4>Keçidlər</h4>
+          <ul>
+            <li><a href="#">Ana səhifə</a></li>
+            <li><a href="#">Məhsullar</a></li>
+            <li><a href="#">Endirimlər</a></li>
+            <li><a href="#">Əlaqə</a></li>
+          </ul>
+        </div>
+
+        <!-- SUPPORT -->
+        <div class="footer-col">
+          <h4>Dəstək</h4>
+          <ul>
+            <li><a href="#">Çatdırılma</a></li>
+            <li><a href="#">Qaytarma</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-col">
+          <h4>Əlaqə</h4>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Bakı, Azərbaycan</span>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+994501234567">+994 50 123 45 67</a>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:info@mobix.az">info@mobix.az</a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- NEWSLETTER -->
+      <div class="footer-newsletter">
+        <h4>Yeniliklərdən xəbərdar ol</h4>
+
+        <div class="newsletter-box">
+          <input type="email" placeholder="Email ünvanınızı daxil edin">
+          <button>Abunə ol</button>
+        </div>
+      </div>
+
+      <!-- SOCIAL -->
+      <div class="footer-bottom">
+        <div class="socials">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+
+        <p>© 2026 Mobix. Bütün hüquqlar qorunur</p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      // Hamburger toggle (mobile)
+      const burger = document.querySelector(".burger");
+      const headBox = document.querySelector(".head-box ul");
+
+      burger.addEventListener("click", function () {
+        headBox.classList.toggle("active");
+        // max-height təyin et
+        if (headBox.classList.contains("active")) {
+          headBox.style.maxHeight = headBox.scrollHeight + "px";
+        } else {
+          headBox.style.maxHeight = "0px";
+        }
+      });
+
+      // Pages və Blog alt menyular (mobile)
+      const submenuLinks = document.querySelectorAll(".pages > a, .blog > a");
+
+      submenuLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+          if (window.innerWidth <= 992) { // Mobile
+            e.preventDefault();
+            const submenu = this.nextElementSibling;
+
+            if (!submenu) return;
+
+            // Əvvəlki açıq submenu-ları bağla
+            document.querySelectorAll(".pages ul, .blog ul").forEach(sm => {
+              if (sm !== submenu) {
+                sm.style.maxHeight = "0px";
+              }
+            });
+
+            // Toggle bu submenu
+            if (submenu.style.maxHeight && submenu.style.maxHeight !== "0px") {
+              submenu.style.maxHeight = "0px";
+            } else {
+              submenu.style.maxHeight = submenu.scrollHeight + "px";
+            }
+          }
+        });
+      });
+
+      // Responsive üçün: window resize zamanı maxHeight sıfırla
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 992) {
+          headBox.style.maxHeight = null;
+          document.querySelectorAll(".pages ul, .blog ul").forEach(sm => {
+            sm.style.maxHeight = null;
+          });
+        } else {
+          if (!headBox.classList.contains("active")) {
+            headBox.style.maxHeight = "0px";
+          }
+        }
+      });
+
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navLinks = document.querySelectorAll(".head-box ul li a");
+
+      let currentPage = window.location.pathname.split("/").pop();
+
+      if (currentPage === "") {
+        currentPage = "index.html";
+      }
+
+      navLinks.forEach(link => {
+        let linkHref = link.getAttribute("href");
+
+        if (!linkHref) return;
+
+        linkHref = linkHref.replace("./", "");
+
+        // Əgər link uyğun gəlirsə
+        if (linkHref === currentPage) {
+          link.classList.add("active");
+
+          // Əgər submenu içindədirsə → parent-i də aktiv et
+          const parentLi = link.closest("li");
+          const parentMenu = parentLi.closest(".pages, .blog");
+
+          if (parentMenu) {
+            const parentLink = parentMenu.querySelector("a");
+            parentLink.classList.add("active");
+          }
+        }
+
+        // klik zamanı
+        link.addEventListener("click", function () {
+          navLinks.forEach(item => item.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+    });
+
+
+
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+      // ================= BURGER =================
+      const burger = document.querySelector(".burger");
+      const menu = document.querySelector(".navbar-container ul");
+
+      burger.addEventListener("click", () => {
+        burger.classList.toggle("active");
+        menu.classList.toggle("active");
+      });
+
+      // ================= DROPDOWN =================
+      const productLink = document.querySelector(".pages > a");
+      const dropdown = document.querySelector(".pages .dropdown-menu");
+
+      productLink.addEventListener("click", (e) => {
+        if (window.innerWidth <= 992) {
+          e.preventDefault();
+          dropdown.classList.toggle("active");
+        }
+      });
+
+    });
+  </script>
+
+
+
+
+
+
+
+
+<script src="./product.js"></script>
+<script src="./js/cart.js"></script>
+<script src="./js/search.js"></script>
+<script src="./shop.js"></script>
+
+  </body>
+
+</html>

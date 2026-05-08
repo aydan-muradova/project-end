@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="./css/discount.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <title>Mobix</title>
+
+
+
+
+</head>
+
+<body>
+
+
+  <div class="container container-back">
+
+    <div class="site-header">
+
+      <div>
+        <a href="#">
+          <img src="./img/2-removebg-preview (1).png" alt="">
+        </a>
+      </div>
+
+
+
+      <div class="search-box desktop-search">
+        <input type="text" placeholder="Search">
+        <i class="search-icon fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class=" navbar-container">
+
+        <ul class="d-flex list-unstyled gap-3">
+
+          <li class="mobile-search">
+            <div class="search-box">
+              <input type="text" placeholder="Search">
+              <i class="search-icon fa-solid fa-magnifying-glass"></i>
+            </div>
+          </li>
+          <li><a href="./index.html">Ana səhifə</a></li>
+          <li class="pages">
+            <a href="./product.html">Məhsullar</a>
+            <ul class="dropdown-menu">
+              <li><a href="./category.html">Kateqoriyalar</a></li>
+              <li><a href="./new.html">Yenilər</a></li>
+
+            </ul>
+          </li>
+
+
+
+          <li><a href="./about.html">Haqqımızda</a></li>
+
+          <li><a href="./contact.html">Əlaqə</a></li>
+          <li>
+            <a href="./discount.html">
+              Endirimlər<i class="fa-solid fa-fire"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./approval.html">
+              <i class="color-h-c fa-regular fa-heart"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="./card.html">
+              <i class="color-h-c fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="burger">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- hero -->
+
+  <section class="product-hero ">
+
+    <div class="hero-slider">
+
+      <div class="slide slide1 active"
+        style="background-image:url('./img/discount-img/Image\ Apr\ 27\,\ 2026\,\ 06_21_35\ PM.png')">
+        <!-- <h1>Yeni iPhone modelləri</h1>
+      <p>Ən son texnologiya və endirimlər</p> -->
+      </div>
+
+      <div class="slide" style="background-image:url('./img/discount-img/Image\ Apr\ 27\,\ 2026\,\ 10_45_36\ PM.png')">
+        <!-- <h1>Samsung Galaxy seriyası</h1>
+      <p>Güclü performans, sərfəli qiymət</p> -->
+      </div>
+
+      <div class="slide slide3"
+        style="background-image:url('./img/discount-img/Image\ Apr\ 27\,\ 2026\,\ 01_40_59\ PM.png')">
+        <!-- <h1>50%-dək endirimlər</h1>
+      <p>Qaçırmayın!</p> -->
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+  <!-- kart -->
+
+
+
+  <div class="container section-title">
+    <h2>Endirimli məhsullar</h2>
+    <p>Ən yaxşı təkliflər və xüsusi endirimlər</p>
+  </div>
+
+
+  <div class="container filter-cards">
+
+    <!-- FILTER -->
+    <aside class="filter">
+
+      <h3>Filter</h3>
+
+      <!-- CATEGORY -->
+      <div class="filter-group">
+        <div class="filter-title toggle">Kateqoriya <span>▼</span></div>
+
+        <div class="filter-options">
+          <button class="filter-btn active" data-filter="all">Hamısı</button>
+          <button class="filter-btn" data-filter="phone"><i class="fa-solid fa-mobile-screen-button"></i>
+            Telefon</button>
+          <button class="filter-btn" data-filter="tablet"><i class="fa-solid fa-tablet-screen-button"></i>
+            Planşet</button>
+          <button class="filter-btn" data-filter="laptop"><i class="fa-solid fa-laptop"></i> Kompüter</button>
+          <button class="filter-btn" data-filter="accessory"><i class="fa-solid fa-plug"></i> <i
+              class="fa-solid fa-headphones"></i> Aksesuar</button>
+        </div>
+      </div>
+
+      <!-- PRICE -->
+      <div class="filter-group">
+
+        <div class="filter-title toggle">Qiymət <span>▼</span></div>
+
+        <div class="filter-options ">
+
+          <button class="price-filter" data-max="500">0 - 500 ₼</button>
+          <button class="price-filter" data-max="1000">500 - 1000 ₼</button>
+          <button class="price-filter" data-max="2000">1000 - 2000 ₼</button>
+          <button class="price-filter" data-max="999999">2000 ₼ +</button>
+
+        </div>
+      </div>
+
+    </aside>
+
+
+    <!-- PRODUCTS -->
+
+
+
+    <div class="products" id="products">
+
+
+
+
+      <div class="card" data-category="accessory" data-price="1200" data-discount="30">
+
+        <!-- TOP (badge + fav) -->
+        <div class="card-top">
+          <span class="badge">-15%</span>
+
+          <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- IMAGE -->
+        <img src=".//img/discount-img/p1.png" alt="">
+
+        <!-- NAME -->
+        <h3 class="name">Saat Santa Barbara Polo & zracquet Club SB.4.10020-3</h3>
+
+        <!-- STARS -->
+        <div class="stars">★★★★★</div>
+
+        <!-- PRICE + STORAGE -->
+        <div class="price-row">
+
+          <div class="prices">
+            <span class="old-price">229.99 ₼</span>
+            <span class="new-price">195.49 ₼</span>
+          </div>
+
+          <div class="storage">
+            <!-- <span class="storage-btn active" data-price="1200">128GB</span>
+    <span class="storage-btn" data-price="1350">256GB</span>
+    <span class="storage-btn" data-price="1500">512GB</span> -->
+          </div>
+
+        </div>
+
+        <!-- INSTALLMENT -->
+        <div class="installment">
+          <span class="month" data-month="6">6 ay</span>
+          <span class="month" data-month="9">9 ay</span>
+          <span class="month active" data-month="12">12 ay</span>
+        </div>
+
+        <!-- MONTHLY -->
+        <div class="monthly-price">
+          <span class="month-count">12 ay</span>
+          <span class="amount">100 ₼</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn add-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+        </button>
+
+      </div>
+
+
+
+
+      <!-- box2 -->
+
+      <div class="card" data-category="accessory" data-price="1200" data-discount="30">
+
+        <!-- TOP (badge + fav) -->
+        <div class="card-top">
+          <span class="badge">-20%</span>
+
+          <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- IMAGE -->
+        <img src=".//img/discount-img/p2.webp" alt="">
+
+        <!-- NAME -->
+        <h3 class="name">Qulaqlıq SVEN E-315B SV-022631 Black</h3>
+
+        <!-- STARS -->
+        <div class="stars">★★★★★</div>
+
+        <!-- PRICE + STORAGE -->
+        <div class="price-row">
+
+          <div class="prices">
+            <span class="old-price">59.99 ₼</span>
+            <span class="new-price">47.99 ₼</span>
+          </div>
+
+          <!-- <div class="storage">
+    <span class="storage-btn active" data-price="1200">128GB</span>
+    <span class="storage-btn" data-price="1350">256GB</span>
+    <span class="storage-btn" data-price="1500">512GB</span>
+  </div> -->
+
+        </div>
+
+        <!-- INSTALLMENT -->
+        <div class="installment">
+          <span class="month" data-month="6">6 ay</span>
+          <span class="month" data-month="9">9 ay</span>
+          <span class="month active" data-month="12">12 ay</span>
+        </div>
+
+        <!-- MONTHLY -->
+        <div class="monthly-price">
+          <span class="month-count">12 ay</span>
+          <span class="amount">100 ₼</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn add-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+        </button>
+
+      </div>
+
+
+      <!-- box3 -->
+
+      <div class="card" data-category="phone" data-price="1200" data-discount="30">
+
+        <!-- TOP (badge + fav) -->
+        <div class="card-top">
+          <span class="badge">-18%</span>
+
+          <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- IMAGE -->
+        <img src=".//img/discount-img/p3.png" alt="">
+
+        <!-- NAME -->
+        <h3 class="name">Nokia 235 DS AZGEUA &nbsp; &nbsp;&nbsp; Black</h3>
+
+        <!-- STARS -->
+        <div class="stars">★★★★★</div>
+
+        <!-- PRICE + STORAGE -->
+        <div class="price-row">
+
+          <div class="prices">
+            <span class="old-price">190 ₼</span>
+            <span class="new-price">152 ₼</span>
+          </div>
+
+          <div class="storage">
+            <span class="storage-btn active" data-price="1200">128GB</span>
+            <span class="storage-btn" data-price="1350">256GB</span>
+            <span class="storage-btn" data-price="1500">512GB</span>
+          </div>
+
+        </div>
+
+        <!-- INSTALLMENT -->
+        <div class="installment">
+          <span class="month" data-month="6">6 ay</span>
+          <span class="month" data-month="9">9 ay</span>
+          <span class="month active" data-month="12">12 ay</span>
+        </div>
+
+        <!-- MONTHLY -->
+        <div class="monthly-price">
+          <span class="month-count">12 ay</span>
+          <span class="amount">100 ₼</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn add-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+        </button>
+
+      </div>
+      <!-- box4 -->
+
+
+
+      <div class="card" data-category="accessory" data-price="1200" data-discount="30">
+
+        <!-- TOP (badge + fav) -->
+        <div class="card-top">
+          <span class="badge">-25%</span>
+
+          <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- IMAGE -->
+        <img src=".//img/discount-img/p4.png" alt="">
+
+        <!-- NAME -->
+        <h3 class="name">Qulaqlıq Sony WH-CH520 On-Ear WH-CH520</h3>
+
+        <!-- STARS -->
+        <div class="stars">★★★★★</div>
+
+        <!-- PRICE + STORAGE -->
+        <div class="price-row">
+
+          <div class="prices">
+            <span class="old-price">109.99 ₼</span>
+            <span class="new-price">84.99 ₼</span>
+          </div>
+
+          <!-- <div class="storage">
+    <span class="storage-btn active" data-price="1200">128GB</span>
+    <span class="storage-btn" data-price="1350">256GB</span>
+    <span class="storage-btn" data-price="1500">512GB</span>
+  </div> -->
+
+        </div>
+
+        <!-- INSTALLMENT -->
+        <div class="installment">
+          <span class="month" data-month="6">6 ay</span>
+          <span class="month" data-month="9">9 ay</span>
+          <span class="month active" data-month="12">12 ay</span>
+        </div>
+
+        <!-- MONTHLY -->
+        <div class="monthly-price">
+          <span class="month-count">12 ay</span>
+          <span class="amount">100 ₼</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn add-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+        </button>
+
+      </div>
+
+
+      <!-- box5 -->
+
+      <div class="card" data-category="phone" data-price="1200" data-discount="30">
+
+        <!-- TOP (badge + fav) -->
+        <div class="card-top">
+          <span class="badge">-14%</span>
+
+          <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- IMAGE -->
+        <img src=".//img/discount-img/p5.webp" alt="">
+
+        <!-- NAME -->
+        <h3 class="name">Xiaomi Redmi Note 15 Glacier Blue</h3>
+
+        <!-- STARS -->
+        <div class="stars">★★★★★</div>
+
+        <!-- PRICE + STORAGE -->
+        <div class="price-row">
+
+          <div class="prices">
+            <span class="old-price">569 ₼</span>
+            <span class="new-price">480 ₼</span>
+          </div>
+
+          <div class="storage">
+            <span class="storage-btn active" data-price="1200">128GB</span>
+            <span class="storage-btn" data-price="1350">256GB</span>
+            <span class="storage-btn" data-price="1500">512GB</span>
+          </div>
+
+        </div>
+
+        <!-- INSTALLMENT -->
+        <div class="installment">
+          <span class="month" data-month="6">6 ay</span>
+          <span class="month" data-month="9">9 ay</span>
+          <span class="month active" data-month="12">12 ay</span>
+        </div>
+
+        <!-- MONTHLY -->
+        <div class="monthly-price">
+          <span class="month-count">12 ay</span>
+          <span class="amount">100 ₼</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn add-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+        </button>
+
+      </div>
+
+
+
+      <!-- box6 -->
+
+      <div class="card" data-category="accessory" data-price="1200" data-discount="30">
+
+        <!-- TOP (badge + fav) -->
+        <div class="card-top">
+          <span class="badge">-40%</span>
+
+          <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- IMAGE -->
+        <img src=".//img/discount-img/ear.png" alt="">
+
+        <!-- NAME -->
+        <h3 class="name">Qulaqlıq HUAWEI Freebuds SE 3 55037990 Beige</h3>
+
+        <!-- STARS -->
+        <div class="stars">★★★★★</div>
+
+        <!-- PRICE + STORAGE -->
+        <div class="price-row">
+
+          <div class="prices">
+            <span class="old-price">89.99 ₼</span>
+            <span class="new-price">53.99 ₼</span>
+          </div>
+
+          <!-- <div class="storage">
+    <span class="storage-btn active" data-price="1200">128GB</span>
+    <span class="storage-btn" data-price="1350">256GB</span>
+    <span class="storage-btn" data-price="1500">512GB</span>
+  </div> -->
+
+        </div>
+
+        <!-- INSTALLMENT -->
+        <div class="installment">
+          <span class="month" data-month="6">6 ay</span>
+          <span class="month" data-month="9">9 ay</span>
+          <span class="month active" data-month="12">12 ay</span>
+        </div>
+
+        <!-- MONTHLY -->
+        <div class="monthly-price">
+          <span class="month-count">12 ay</span>
+          <span class="amount">100 ₼</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn add-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+        </button>
+
+      </div>
+      <!-- box7 -->
+
+      <div class="card" data-category="phone" data-price="1200" data-discount="30">
+
+        <!-- TOP (badge + fav) -->
+        <div class="card-top">
+          <span class="badge">-15%</span>
+
+          <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- IMAGE -->
+        <img src=".//img/discount-img/p6.webp" alt="">
+
+        <!-- NAME -->
+        <h3 class="name">Samsung Galaxy A07 (SM-A075) Green</h3>
+
+        <!-- STARS -->
+        <div class="stars">★★★★★</div>
+
+        <!-- PRICE + STORAGE -->
+        <div class="price-row">
+
+          <div class="prices">
+            <span class="old-price">340 ₼</span>
+            <span class="new-price">289 ₼</span>
+          </div>
+
+          <div class="storage">
+            <span class="storage-btn active" data-price="1200">128GB</span>
+            <span class="storage-btn" data-price="1350">256GB</span>
+            <span class="storage-btn" data-price="1500">512GB</span>
+          </div>
+
+        </div>
+
+        <!-- INSTALLMENT -->
+        <div class="installment">
+          <span class="month" data-month="6">6 ay</span>
+          <span class="month" data-month="9">9 ay</span>
+          <span class="month active" data-month="12">12 ay</span>
+        </div>
+
+        <!-- MONTHLY -->
+        <div class="monthly-price">
+          <span class="month-count">12 ay</span>
+          <span class="amount">100 ₼</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn add-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+        </button>
+
+      </div>
+
+
+      <!-- box8 -->
+      <div class="card" data-category="tablet" data-price="1200" data-discount="30">
+
+        <!-- TOP (badge + fav) -->
+        <div class="card-top">
+          <span class="badge">-15%</span>
+
+          <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- IMAGE -->
+        <img src=".//img/discount-img/pl.webp" alt="">
+
+        <!-- NAME -->
+        <h3 class="name">Xiaomi Redmi Pad 2 Pro</h3>
+
+        <!-- STARS -->
+        <div class="stars">★★★★★</div>
+
+        <!-- PRICE + STORAGE -->
+        <div class="price-row">
+
+          <div class="prices">
+            <span class="old-price">639.99 ₼</span>
+            <span class="new-price">543.99 ₼</span>
+          </div>
+
+          <div class="storage">
+            <span class="storage-btn active" data-price="1200">128GB</span>
+            <span class="storage-btn" data-price="1350">256GB</span>
+            <span class="storage-btn" data-price="1500">512GB</span>
+          </div>
+
+        </div>
+
+        <!-- INSTALLMENT -->
+        <div class="installment">
+          <span class="month" data-month="6">6 ay</span>
+          <span class="month" data-month="9">9 ay</span>
+          <span class="month active" data-month="12">12 ay</span>
+        </div>
+
+        <!-- MONTHLY -->
+        <div class="monthly-price">
+          <span class="month-count">12 ay</span>
+          <span class="amount">100 ₼</span>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn add-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+        </button>
+
+      </div>
+
+
+
+    </div>
+
+    </section>
+
+  </div>
+
+
+
+
+  
+
+  <!-- novbeti -->
+  <div class="countdown">
+    <span class="label"><i class="fa-solid fa-fire"></i> Təklif bitir:</span>
+
+    <div class="time">
+      <div><b>02</b><small>gün</small></div>
+      <div><b>14</b><small>saat</small></div>
+      <div><b>35</b><small>dəq</small></div>
+    </div>
+  </div>
+
+
+  <!-- teklifler -->
+  <div class="container great-card">
+    <div class="section-title2">
+      <h2 class="special-fire-heading">Xüsusi Təkliflər</h2>
+      <span class="line">
+        <span class="line-flame">🔥</span>
+      </span>
+    </div>
+    <div class="super-scroll">
+
+      <div class="super-offer">
+        <div class="offer-image">
+          <img src="./img/discount-img/comp1.webp" alt="">
+        </div>
+
+        <div class="offer-content">
+          <span class="badge">-30%</span>
+          <h2>Notbuk HP 15-FD1030CI (B5JR3EA)</h2>
+
+          <p class="desc">512GB</p>
+          <div class="price">
+            <span class="old">2100 ₼</span>
+            <span class="new">1470 ₼</span>
+          </div>
+
+          <button class="offer-btn">
+            <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+          </button>
+        </div>
+      </div>
+
+      <!-- box2 -->
+
+
+
+      <div class="super-offer">
+        <div class="offer-image">
+          <img src="./img/discount-img/comp2.webp" alt="">
+        </div>
+
+        <div class="offer-content">
+          <span class="badge">-35%</span>
+          <h2>Notbuk Lenovo LOQ 15AHP10 (83JG007LRK)</h2>
+          <p class="desc">512GB</p>
+
+          <div class="price">
+            <span class="old">3400 ₼</span>
+            <span class="new">2210 ₼</span>
+          </div>
+
+          <button class="offer-btn">
+            <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+          </button>
+        </div>
+      </div>
+
+
+
+
+      <!-- box3 -->
+      <div class="super-offer">
+        <div class="offer-image">
+          <img src="./img/discount-img/ear.png" alt="">
+        </div>
+
+        <div class="offer-content">
+          <span class="badge">-40%</span>
+          <h2>Qulaqlıq Hama Spirit Calm 00184181 </h2>
+
+
+          <div class="price">
+            <span class="old">99.99 ₼</span>
+            <span class="new">59.99 ₼</span>
+          </div>
+
+          <button class="offer-btn">
+            <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+          </button>
+        </div>
+      </div>
+
+      <!-- box4 -->
+
+      <div class="super-offer">
+        <div class="offer-image">
+          <img src="./img/discount-img/ph2.webp" alt="">
+        </div>
+
+        <div class="offer-content">
+          <span class="badge">-10%</span>
+          <h2>OPPO Reno15 </h2>
+          <p class="desc">256GB</p>
+
+          <div class="price">
+            <span class="old">1000₼</span>
+            <span class="new">900₼</span>
+          </div>
+
+          <button class="offer-btn">
+            <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+          </button>
+        </div>
+      </div>
+      <!-- box5 -->
+      <div class="super-offer">
+        <div class="offer-image">
+          <img src="./img/discount-img/tm-dg-acs-1109-qi-0132_9788-56420079.webp" alt="">
+        </div>
+
+        <div class="offer-content">
+          <span class="badge">-20%</span>
+          <h2>Ugreen Wireless Charger 2 in 1 W706_45023 Gray</h2>
+
+
+          <div class="price">
+            <span class="old">129.99 ₼</span>
+            <span class="new"> 103.99 ₼</span>
+          </div>
+
+          <button class="offer-btn">
+            <i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et
+          </button>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  <!-- footer -->
+
+
+  <footer class="footer">
+
+    <div class="container">
+      <div class="footer-container">
+
+        <!-- LOGO -->
+        <div class="footer-col">
+          <h3 class="logo">Mobix</h3>
+          <p>
+            Smart cihazlar və aksesuarlar üçün etibarlı ünvan.
+            Keyfiyyət, sürət və münasib qiymət bir arada.
+          </p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-col">
+          <h4>Keçidlər</h4>
+          <ul>
+            <li><a href="#">Ana səhifə</a></li>
+            <li><a href="#">Məhsullar</a></li>
+            <li><a href="#">Endirimlər</a></li>
+            <li><a href="#">Əlaqə</a></li>
+          </ul>
+        </div>
+
+        <!-- SUPPORT -->
+        <div class="footer-col">
+          <h4>Dəstək</h4>
+          <ul>
+            <li><a href="#">Çatdırılma</a></li>
+            <li><a href="#">Qaytarma</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-col">
+          <h4>Əlaqə</h4>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Bakı, Azərbaycan</span>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+994501234567">+994 50 123 45 67</a>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:info@mobix.az">info@mobix.az</a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- NEWSLETTER -->
+      <div class="footer-newsletter">
+        <h4>Yeniliklərdən xəbərdar ol</h4>
+
+        <div class="newsletter-box">
+          <input type="email" placeholder="Email ünvanınızı daxil edin">
+          <button>Abunə ol</button>
+        </div>
+      </div>
+
+      <!-- SOCIAL -->
+      <div class="footer-bottom">
+        <div class="socials">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+
+        <p>© 2026 Mobix. Bütün hüquqlar qorunur</p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      // Hamburger toggle (mobile)
+      const burger = document.querySelector(".burger");
+      const headBox = document.querySelector(".head-box ul");
+
+      burger.addEventListener("click", function () {
+        headBox.classList.toggle("active");
+        // max-height təyin et
+        if (headBox.classList.contains("active")) {
+          headBox.style.maxHeight = headBox.scrollHeight + "px";
+        } else {
+          headBox.style.maxHeight = "0px";
+        }
+      });
+
+      // Pages və Blog alt menyular (mobile)
+      const submenuLinks = document.querySelectorAll(".pages > a, .blog > a");
+
+      submenuLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+          if (window.innerWidth <= 992) { // Mobile
+            e.preventDefault();
+            const submenu = this.nextElementSibling;
+
+            if (!submenu) return;
+
+            // Əvvəlki açıq submenu-ları bağla
+            document.querySelectorAll(".pages ul, .blog ul").forEach(sm => {
+              if (sm !== submenu) {
+                sm.style.maxHeight = "0px";
+              }
+            });
+
+            // Toggle bu submenu
+            if (submenu.style.maxHeight && submenu.style.maxHeight !== "0px") {
+              submenu.style.maxHeight = "0px";
+            } else {
+              submenu.style.maxHeight = submenu.scrollHeight + "px";
+            }
+          }
+        });
+      });
+
+      // Responsive üçün: window resize zamanı maxHeight sıfırla
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 992) {
+          headBox.style.maxHeight = null;
+          document.querySelectorAll(".pages ul, .blog ul").forEach(sm => {
+            sm.style.maxHeight = null;
+          });
+        } else {
+          if (!headBox.classList.contains("active")) {
+            headBox.style.maxHeight = "0px";
+          }
+        }
+      });
+
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navLinks = document.querySelectorAll(".head-box ul li a");
+
+      let currentPage = window.location.pathname.split("/").pop();
+
+      if (currentPage === "") {
+        currentPage = "index.html";
+      }
+
+      navLinks.forEach(link => {
+        let linkHref = link.getAttribute("href");
+
+        if (!linkHref) return;
+
+        linkHref = linkHref.replace("./", "");
+
+        // Əgər link uyğun gəlirsə
+        if (linkHref === currentPage) {
+          link.classList.add("active");
+
+          // Əgər submenu içindədirsə → parent-i də aktiv et
+          const parentLi = link.closest("li");
+          const parentMenu = parentLi.closest(".pages, .blog");
+
+          if (parentMenu) {
+            const parentLink = parentMenu.querySelector("a");
+            parentLink.classList.add("active");
+          }
+        }
+
+        // klik zamanı
+        link.addEventListener("click", function () {
+          navLinks.forEach(item => item.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+    });
+
+
+
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+      // ================= BURGER =================
+      const burger = document.querySelector(".burger");
+      const menu = document.querySelector(".navbar-container ul");
+
+      burger.addEventListener("click", () => {
+        burger.classList.toggle("active");
+        menu.classList.toggle("active");
+      });
+
+      // ================= DROPDOWN =================
+      const productLink = document.querySelector(".pages > a");
+      const dropdown = document.querySelector(".pages .dropdown-menu");
+
+      productLink.addEventListener("click", (e) => {
+        if (window.innerWidth <= 992) {
+          e.preventDefault();
+          dropdown.classList.toggle("active");
+        }
+      });
+
+    });
+  </script>
+
+
+
+<script src="./js/cart.js"></script>
+<script src="./js/search.js"></script>
+<script src="./discount.js"></script>
+
+
+</body>
+
+</html>
