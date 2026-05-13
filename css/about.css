@@ -532,7 +532,40 @@
 
 
 
+/* basliq rengi */
+.navbar-container a {
+  color: black;
+  transition: 0.2s;
+}
 
+/* hover yalnız active olmayanlara */
+.navbar-container a:not(.active):hover {
+  color: #fab500;
+}
+
+
+
+.navbar-container ul li a.active {
+  color: #FAB700;
+ 
+}
+
+
+.navbar-container a.active {
+  color: #FAB700;
+
+}
+
+.navbar-container a.active i {
+  color: black;
+}
+
+
+
+.color-h-c:hover{
+  color: #000;
+  transition: 0.3s;
+}
 
 
 

@@ -20,7 +20,7 @@ function showToast(message) {
   toast.style.color = "#fff";
   toast.style.padding = "12px 20px";
   toast.style.borderRadius = "10px";
-  toast.style.zIndex = "999999"; // FIX: görünməmə problemi
+  toast.style.zIndex = "999999";
   toast.style.opacity = "1";
   toast.style.transition = "0.3s";
   toast.style.fontSize = "14px";
@@ -35,7 +35,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const cards = Array.from(document.querySelectorAll(".card"));
 
   let activeCategory = "all";
-  let activePrice = 999999;
+
+  // 🔥 FIX: range sistem
+  let activeMinPrice = 0;
+  let activeMaxPrice = 999999;
+
   let visibleCount = 8;
   let searchValue = "";
 
@@ -43,11 +47,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const state = new Map();
 
   // =======================
-  // INIT STATE
+  // INIT STATE (FIX NaN)
   // =======================
   cards.forEach(card => {
     state.set(card, {
-      price: Number(card.dataset.price),
+      price: Number(card.dataset.price || 0),
       month: 12
     });
   });
@@ -65,6 +69,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+
+
+
+
+
+
+
+  // ❤️ Heart toggle
+document.addEventListener("click", function (e) {
+
+  const heart = e.target.closest(".fa-heart");
+
+  if (!heart) return;
+
+  heart.classList.toggle("fa-regular");
+  heart.classList.toggle("fa-solid");
+
+  heart.style.color =
+    heart.classList.contains("fa-solid")
+      ? "#FFA500"
+      : "gray";
+
+});
   // =======================
   // UPDATE CARD
   // =======================
@@ -80,7 +107,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const discounted = st.price - (st.price * discount / 100);
 
     if (oldPriceEl) oldPriceEl.textContent = st.price + " ₼";
-    if (newPriceEl) newPriceEl.textContent = Math.round(discounted) + " ₼";
+   if (newPriceEl) {
+  newPriceEl.textContent =
+    Number.isInteger(discounted)
+      ? discounted + " ₼"
+      : discounted.toFixed(2) + " ₼";
+}
 
     if (monthCount) monthCount.textContent = st.month + " ay";
 
@@ -104,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
         storageBtns.forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
 
-        st.price = Number(btn.dataset.price);
+        st.price = Number(btn.dataset.price || 0);
 
         updateCard(card, st);
         render();
@@ -117,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
         monthBtns.forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
 
-        st.month = Number(btn.dataset.month);
+        st.month = Number(btn.dataset.month || 12);
 
         updateCard(card, st);
         render();
@@ -127,26 +159,30 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // =======================
-  // FILTER
+  // FILTER FUNCTION (FIXED)
   // =======================
-function getFilteredCards() {
-  return cards.filter(card => {
+  function getFilteredCards() {
+    return cards.filter(card => {
 
-    const category = card.dataset.category;
+      const category = card.dataset.category || "";
 
-    const price = state.get(card).price;
+      const price = state.get(card)?.price || 0;
 
-    const nameEl = card.querySelector(".name");
-    const name = nameEl ? nameEl.textContent.toLowerCase() : "";
+      const nameEl = card.querySelector(".name");
+      const name = nameEl ? nameEl.textContent.toLowerCase() : "";
 
-    return (
-      (activeCategory === "all" || category === activeCategory) &&
-      price <= activePrice &&
-      name.includes(searchValue)
-    );
-  });
-}
+      return (
+        (activeCategory === "all" || category === activeCategory) &&
+        price >= activeMinPrice &&
+        price <= activeMaxPrice &&
+        name.includes(searchValue)
+      );
+    });
+  }
 
+  // =======================
+  // RENDER
+  // =======================
   function render() {
 
     const filtered = getFilteredCards();
@@ -181,12 +217,14 @@ function getFilteredCards() {
   });
 
   // =======================
-  // PRICE
+  // PRICE (FIXED RANGE)
   // =======================
   document.querySelectorAll(".price-filter").forEach(btn => {
     btn.addEventListener("click", () => {
 
-      activePrice = Number(btn.dataset.max);
+      activeMinPrice = Number(btn.dataset.min || 0);
+      activeMaxPrice = Number(btn.dataset.max || 999999);
+
       visibleCount = 8;
       render();
     });
@@ -246,7 +284,7 @@ function getFilteredCards() {
   });
 
   // =======================
-  // 🛒 CART (FIX + TOAST)
+  // 🛒 CART
   // =======================
   document.addEventListener("click", (e) => {
 
@@ -258,9 +296,7 @@ function getFilteredCards() {
 
     const product = {
       name: card.querySelector(".name")?.textContent,
-      price: Number(
-        card.querySelector(".new-price")?.textContent.replace(/[₼\s]/g, "")
-      ),
+      price: Number(card.querySelector(".new-price")?.textContent?.replace(/[₼\s]/g, "")) || 0,
       image: card.querySelector("img")?.src
     };
 
@@ -273,7 +309,6 @@ function getFilteredCards() {
   });
 
 });
-
 
 // =======================
 // SLIDER

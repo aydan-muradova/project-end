@@ -508,6 +508,387 @@
 
 
 
+/* basliq rengi */
+.navbar-container a {
+  color: black;
+  transition: 0.2s;
+}
+
+/* hover yalnız active olmayanlara */
+.navbar-container a:not(.active):hover {
+  color: #fab500;
+}
+
+
+
+.navbar-container ul li a.active {
+  color: #FAB700;
+ 
+}
+
+
+.navbar-container a.active {
+  color: #FAB700;
+
+}
+
+.navbar-container a.active i {
+  color: black;
+}
+
+
+.color-h-c:hover{
+  color: #000;
+  transition: 0.3s;
+}
+
+
+
+
+
+/* ===== HEADER ===== */
+
+.favorites-header{
+  padding-top: 210px;
+  padding-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  position: relative;
+}
+
+/* ===== ICON ===== */
+
+.favorites-icon{
+  width: 75px;
+  height: 75px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 0, 85, 0.08);
+
+  margin-bottom: 22px;
+
+  box-shadow:
+  0 10px 30px rgba(255,0,85,.08);
+}
+
+.favorites-icon i{
+  font-size: 30px;
+  color: crimson;
+}
+
+/* ===== TITLE ===== */
+.favorites-title{
+  font-size: 48px;
+  font-weight: 800;
+
+  margin-bottom: 14px;
+
+  letter-spacing: -1.5px;
+
+  color: transparent;
+
+  background: linear-gradient(
+    to right,
+    /* orange, */
+    crimson,
+    hotpink,
+   /* coral, */
+    purple
+  );
+
+  background-clip: text;
+
+  text-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+/* ===== SUBTITLE ===== */
+
+.favorites-subtitle{
+  color: #777;
+
+  font-size: 17px;
+
+  max-width: 520px;
+
+  line-height: 1.7;
+}
+
+/* ===== DECORATIVE LINE ===== */
+
+.favorites-header::after{
+  content: "";
+
+  width: 130px;
+  height: 4px;
+
+  background: linear-gradient(to right, crimson, hotpink);
+
+  border-radius: 50px;
+
+  margin-top: 28px;
+}
+
+/* footer */
+
+.footer {
+  background: radial-gradient(circle at top, #1a1a1a, #0d0d0d);
+  color: #fff;
+  padding: 60px 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* glow effect */
+.footer::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #FFA500;
+  filter: blur(120px);
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+  pointer-events: none; /* kliklərə mane olmasın */
+}
+
+/* container */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* logo */
+.footer .logo {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+/* links */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin: 8px 0;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #FFA500;
+}
+
+/* contact */
+.contact-item {
+  display: flex;
+  gap: 10px;
+  margin: 8px 0;
+  align-items: center;
+}
+
+.contact-item a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* newsletter */
+.footer-newsletter {
+  text-align: center;
+  margin: 50px 0 30px;
+}
+
+.newsletter-box {
+  display: flex;
+  max-width: 400px;
+  margin: 15px auto 0;
+background: radial-gradient(circle at top, #1f1f1f, #1b1a1a);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.newsletter-box input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  color: white;
+}
+
+.newsletter-box button {
+  background: linear-gradient(135deg, #FFA500, #ff6a00);
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* bottom */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.socials i {
+  margin: 0 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socials i:hover {
+  color: #FFA500;
+}
+
+/* responsive */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns:  repeat(2, 1fr);
+  
+  }
+}
+@media (max-width: 500px) {
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Mobix olan hissə (1-ci col) */
+  .footer-col:first-child {
+    grid-column: 1 / -1; /* bütün sətri tutsun */
+    text-align: center;
+  }
+
+}
+@media (max-width: 400px) {
+.newsletter-box button {
+  background: linear-gradient(135deg, #FFA500, #ff6a00);
+  border: none;
+  padding: 10px 10px;
+  color: white;
+  cursor: pointer;
+}
+.newsletter-box {
+  display: flex;
+  max-width: 300px;
+  margin: 15px auto 0;
+background: radial-gradient(circle at top, #1f1f1f, #1b1a1a);
+  border-radius: 50px;
+  overflow: hidden;
+}
+.newsletter-box  input, .newsletter-box button{
+  font-size: 14px;
+}
+.footer-col h4, .footer-col .logo, .footer-newsletter h4 {
+  font-size: 19px;
+}
+
+}
+@media (max-width: 351px) {
+
+
+  .footer-newsletter {
+    margin: 30px 10px;
+    
+  }
+  .newsletter-box {
+    flex-direction: column; 
+    border-radius: 20px;
+  }
+
+  .newsletter-box input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .newsletter-box button {
+    width: 100%;
+    padding: 12px;
+  } 
+
+}
+
+
+
+
+
+
+
+/* son */
+@media (max-width: 500px) {
+  .container {
+
+    padding: 0 45px;
+  }
+}
+@media (max-width: 370px) {
+  .container {
+
+    padding: 0 30px;
+  }
+}
+
+
+
+/* basliq rengi */
+.navbar-container a {
+  color: black;
+  transition: 0.2s;
+}
+
+/* hover yalnız active olmayanlara */
+.navbar-container a:not(.active):hover {
+  color: #fab500;
+}
+
+
+
+.navbar-container ul li a.active {
+  color: #FAB700;
+ 
+}
+
+
+.navbar-container a.active {
+  color: #FAB700;
+
+}
+
+.navbar-container a.active i {
+  color: black;
+}
+.color-h-c:hover{
+  color: #000;
+  transition: 0.3s;
+}
+
+
 #toast{
   position: fixed;
   bottom: 20px;

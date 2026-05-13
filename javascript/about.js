@@ -30,3 +30,58 @@ const observer = new IntersectionObserver((entries) => {
 
 counters.forEach(counter => observer.observe(counter));
 
+
+
+
+
+
+
+
+
+
+
+
+
+// basliq
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const links = document.querySelectorAll(".navbar-container a");
+
+  const getPage = (url) => {
+    if (!url) return "";
+    return url.split("/").pop().split("#")[0];
+  };
+
+  const currentPage = getPage(window.location.pathname);
+
+  function setActive(link) {
+    links.forEach(l => l.classList.remove("active"));
+
+    link.classList.add("active");
+
+    // dropdown parent
+    const parent = link.closest(".pages");
+    if (parent) {
+      const parentLink = parent.querySelector(":scope > a");
+      if (parentLink) parentLink.classList.add("active");
+    }
+  }
+
+  links.forEach(link => {
+
+    const linkPage = getPage(link.getAttribute("href"));
+
+    // PAGE LOAD ACTIVE
+    if (linkPage === currentPage) {
+      setActive(link);
+    }
+
+    // CLICK ACTIVE (SPA kimi hiss üçün)
+    link.addEventListener("click", () => {
+      setActive(link);
+    });
+
+  });
+
+});

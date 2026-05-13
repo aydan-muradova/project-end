@@ -15,100 +15,63 @@ setInterval(showSlide, 4000);
 
 
 
-// kart
 
 
-// const priceRange = document.getElementById("priceRange");
-// const priceValue = document.getElementById("priceValue");
-// const cards = document.querySelectorAll(".card");
-// const onlyDiscount = document.getElementById("onlyDiscount");
-// const searchInput = document.getElementById("search");
 
-// searchInput.addEventListener("input", filterProducts);
-// qiymət göstər
-// priceRange.addEventListener("input", () => {
-//   priceValue.textContent = `0 - ${priceRange.value} AZN`;
-//   filterProducts();
-// });
+document.addEventListener("DOMContentLoaded", () => {
 
-// checkbox filter
-// onlyDiscount.addEventListener("change", filterProducts);
-// function filterProducts() {
-//   const maxPrice = priceRange.value;
-//   const discountOnly = onlyDiscount.checked;
-//   const searchText = searchInput.value.toLowerCase();
+  const cards = document.querySelectorAll(".card");
 
-//   cards.forEach(card => {
-//     const price = card.getAttribute("data-price");
-//     const discount = card.getAttribute("data-discount");
-//     const title = card.querySelector("h3").textContent.toLowerCase();
+  let activeCategory = "all";
+  let activeMinPrice = 0;
+  let activeMaxPrice = 999999;
 
-//     let show = true;
+  // CATEGORY
+  document.querySelectorAll(".filter-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
 
-//     if (price > maxPrice) show = false;
-//     if (discountOnly && !discount) show = false;
-//     if (!title.includes(searchText)) show = false;
+      document.querySelectorAll(".filter-btn")
+        .forEach(b => b.classList.remove("active"));
 
-//     card.style.display = show ? "block" : "none";
-//   });
-// }
+      btn.classList.add("active");
 
+      activeCategory = btn.dataset.filter;
 
-const cards = document.querySelectorAll(".card");
-
-let activeCategory = "all";
-let activePrice = 999999;
-
-
-// CATEGORY
-document.querySelectorAll(".filter-btn").forEach(btn => {
-  btn.addEventListener("click", () => {
-
-    document.querySelectorAll(".filter-btn")
-      .forEach(b => b.classList.remove("active"));
-
-    btn.classList.add("active");
-
-    activeCategory = btn.dataset.filter;
-
-    filterProducts();
+      filterProducts();
+    });
   });
+
+  // PRICE
+  document.querySelectorAll(".price-filter").forEach(btn => {
+    btn.addEventListener("click", () => {
+
+      activeMinPrice = Number(btn.dataset.min);
+      activeMaxPrice = Number(btn.dataset.max);
+
+      filterProducts();
+    });
+  });
+
+  function filterProducts() {
+
+    cards.forEach(card => {
+
+      const category = card.dataset.category;
+      const price = Number(card.dataset.price);
+
+      const matchCategory =
+        activeCategory === "all" || category === activeCategory;
+
+      const matchPrice =
+        price >= activeMinPrice && price <= activeMaxPrice;
+
+      card.style.display = (matchCategory && matchPrice)
+        ? "flex"
+        : "none";
+    });
+  }
+
 });
-
-
-// PRICE
-document.querySelectorAll(".price-filter").forEach(btn => {
-  btn.addEventListener("click", () => {
-
-    activePrice = Number(btn.dataset.max);
-
-    filterProducts();
-  });
-});
-
-
-// CORE FILTER
-function filterProducts() {
-
-  cards.forEach(card => {
-
-    const category = card.dataset.category;
-    const price = Number(card.dataset.price);
-
-    const matchCategory =
-      activeCategory === "all" || category === activeCategory;
-
-    const matchPrice = price <= activePrice;
-
-    if (matchCategory && matchPrice) {
-      card.style.display = "flex";
-    } else {
-      card.style.display = "none";
-    }
-
-  });
-
-}
 document.querySelectorAll(".toggle").forEach(title => {
   title.addEventListener("click", () => {
 
@@ -227,4 +190,151 @@ slider.addEventListener("mousemove", (e) => {
   const walk = (x - startX) * 2; // sürət
 
   slider.scrollLeft = scrollLeft - walk;
+});
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const links = document.querySelectorAll(".navbar-container a");
+
+  function getPageName(url) {
+    if (!url) return "";
+    return url.split("/").pop().split("#")[0];
+  }
+
+  function setActive(activeLink) {
+
+    links.forEach(l => l.classList.remove("active"));
+
+    activeLink.classList.add("active");
+
+    // dropdown parent active
+    const parent = activeLink.closest(".pages");
+
+    if (parent) {
+      const parentLink = parent.querySelector(":scope > a");
+      if (parentLink) parentLink.classList.add("active");
+    }
+  }
+
+  // 🔥 CLICK ACTIVE
+  links.forEach(link => {
+
+    link.addEventListener("click", () => {
+      setActive(link);
+    });
+
+  });
+
+  // 🔥 PAGE LOAD ACTIVE (REAL FIX)
+  const currentPage = getPageName(window.location.href);
+
+  let matched = null;
+
+  links.forEach(link => {
+
+    const href = getPageName(link.href);
+
+    if (href === currentPage) {
+      matched = link;
+    }
+
+  });
+
+  if (matched) {
+    setActive(matched);
+  } else {
+    // fallback: first link active
+    if (links[0]) setActive(links[0]);
+  }
+
+});
+// sebet 
+
+
+// =======================
+// DISCOUNT PAGE -> DATASET FIX
+// =======================
+
+document.querySelectorAll(".card").forEach(card => {
+
+  // name
+  const name =
+    card.querySelector(".name")?.innerText.trim();
+
+  // image
+  const image =
+    card.querySelector("img")?.getAttribute("src");
+
+  // rating
+  const stars =
+    card.querySelector(".stars")?.innerText.length || 5;
+
+  // active storage
+  const activeStorage =
+    card.querySelector(".storage-btn.active");
+
+  const storage =
+    activeStorage?.innerText || "";
+
+  // current price
+  const priceText =
+    card.querySelector(".new-price")?.innerText
+      .replace("₼", "")
+      .trim();
+
+  // dataset yaz
+  card.dataset.name = name;
+  card.dataset.image = image;
+  card.dataset.rating = stars;
+  card.dataset.storage = storage;
+  card.dataset.price = priceText;
+});
+
+
+// STORAGE CHANGE
+document.querySelectorAll(".storage-btn").forEach(btn => {
+
+  btn.addEventListener("click", () => {
+
+    const card = btn.closest(".card");
+
+    // storage update
+    card.dataset.storage = btn.innerText;
+
+    // yeni qiymət
+    card.dataset.price = btn.dataset.price;
+  });
+
+});
+
+
+// xususi teklifler
+
+// =======================
+// SUPER OFFER DATASET
+// =======================
+
+document.querySelectorAll(".super-offer").forEach(card => {
+
+  const name =
+    card.querySelector("h2")?.innerText.trim();
+
+  const image =
+    card.querySelector("img")?.getAttribute("src");
+
+  const price =
+    card.querySelector(".new")?.innerText
+      .replace("₼", "")
+      .trim();
+
+  card.dataset.name = name;
+  card.dataset.image = image;
+  card.dataset.price = price;
+  card.dataset.rating = 5;
+  card.dataset.storage =
+    card.querySelector(".desc")?.innerText || "";
 });

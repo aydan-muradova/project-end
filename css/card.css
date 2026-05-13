@@ -512,46 +512,6 @@
 
 
 
-/* sebet */
-/* .cart-link {
-  position: relative;
-  font-size: 20px;
-  color: black;
-}
-
-#cart-count {
-  position: absolute;
-  top: -8px;
-  right: -10px;
-  background: red;
-  color: white;
-  font-size: 12px;
-  padding: 3px 6px;
-  border-radius: 50%;
-}
-#cart-count {
-  position: absolute;
-  top: -8px;
-  right: -10px;
-  background: red;
-  color: white;
-  font-size: 12px;
-  padding: 3px 6px;
-  border-radius: 50%;
-  transition: 0.2s;
-}
-
-#cart-count.bump {
-  transform: scale(1.4);
-}
-.cart-item {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
-} */
-
 
 
 #toast {
@@ -886,7 +846,20 @@ background: radial-gradient(circle at top, #1f1f1f, #1b1a1a);
 
 
 
+.cart-item {
+  display: flex;
+  align-items: stretch;
+}
 
+.cart-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cart-price {
+  margin-top: auto;
+}
 
 #toast{
   position: fixed;

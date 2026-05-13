@@ -5,7 +5,7 @@ const data = [
     name: "Samsung Galaxy S26 Ultra (SM-S948)",
     rating: 4,
     // brand: "samsung",
-    image: "http://127.0.0.1:5500/img/tm-dg-sbp-1105-sm-4066_1-7c806119.webp",
+    image: "./img/tm-dg-sbp-1105-sm-4066_1-7c806119.webp",
     storage: [
       { size: "128GB", price: 2940 },
       { size: "256GB", price: 3200 },
@@ -18,7 +18,7 @@ const data = [
     name: "iPhone 17 Pro Max 512 GB Cosmic Orange",
     rating: 5,
     // brand: "apple",
-    image: "http://127.0.0.1:5500/img/tm-dg-sbp-1105-sm-3743_1.webp",
+    image: "./img/tm-dg-sbp-1105-sm-3743_1.webp",
     storage: [
    { size: "256GB", price: 3799 },
   { size: "512GB", price: 4149 },
@@ -29,7 +29,7 @@ const data = [
     {
     name: "Qulaqlıq HUAWEI Freebuds SE 3 55037990 Beige",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/e4Cxid7tGGUL96IMpKSRQ8oqcuA5qqHdDSB7EVxe-full.jpg",
+    image: "./img/e4Cxid7tGGUL96IMpKSRQ8oqcuA5qqHdDSB7EVxe-full.jpg",
     storage: [
     { size: "", price: 68 }
    
@@ -39,7 +39,7 @@ const data = [
       {
     name: "Notbuk Lenovo LOQ 15ARP9 (83JC00LBRK)",
     rating: 5,
-    image: "http://127.0.0.1:5500/img/tm-dg-kot-1114-nb-3219_1.webp",
+    image: "./img/tm-dg-kot-1114-nb-3219_1.webp",
     storage: [
     { size: "SSD 512GB", price: 1899 }
     ]
@@ -50,7 +50,7 @@ const data = [
     {
     name: "Samsung Galaxy A26 (SM-A266B) 8/256 GB Black",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-sbp-1105-sm-3432_1.png",
+    image: "./img/tm-dg-sbp-1105-sm-3432_1.png",
     storage: [
       { size: "256GB", price: 670 }
      
@@ -63,7 +63,7 @@ const data = [
     {
     name: "Samsung Galaxy Tab S11 (SM-X736) 12/128 GB Gray",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-tbq-1105-tb-0777_1.png",
+    image: "./img/tm-dg-tbq-1105-tb-0777_1.png",
     storage: [
       { size: "128GB", price: 1799 },
       { size: "256GB", price: 2200 },
@@ -75,7 +75,7 @@ const data = [
      {
     name: "Apple iPad 11 A16 256 GB Wi-Fi 2025 (MD4J4TY) Yellow",
     rating:3.5, 
-    image: "http://127.0.0.1:5500/img/Ca8hUZOJH7BeIAkaZVCoNi2iTvAoGfZdbpdjdeaU-full.jpg",
+    image: "./img/Ca8hUZOJH7BeIAkaZVCoNi2iTvAoGfZdbpdjdeaU-full.jpg",
     storage: [
        { size: "256GB", price: 1249 }
     ]
@@ -84,7 +84,7 @@ const data = [
       {
     name: "Samsung Galaxy A17 (SM-A175) 6/128 GB Black",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-sbp-1105-sm-3661_1.webp",
+    image: "./img/tm-dg-sbp-1105-sm-3661_1.webp",
     storage: [
       { size: "128GB", price: 419 },
       { size: "256GB", price: 540 },
@@ -97,7 +97,7 @@ const data = [
     {
     name: "iPhone 15 256 GB Green",
     rating: 5,
-    image: "http://127.0.0.1:5500/img/tm-dg-sbp-1105-sm-2476_12.png",
+    image: "./img/tm-dg-sbp-1105-sm-2476_12.png",
     storage: [
       { size: "128GB", price: 1700 },
       { size: "256GB", price: 1989 },
@@ -109,7 +109,7 @@ const data = [
     {
     name: "Ağıllı saat TicWatch Pro",
     rating: 3.5,
-    image: "http://127.0.0.1:5500/img/6145_11.jpg",
+    image: "./img/6145_11.jpg",
     storage: [
       { size: "", price: 399 }
     ]
@@ -118,7 +118,7 @@ const data = [
    {
     name: "Nokia 150 DS Blue (2023)",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-sbp-1105-bp-0225-01.png",
+    image: "./img/tm-dg-sbp-1105-bp-0225-01.png",
     storage: [
       { size: "2GB", price: 130 }
     ]
@@ -127,7 +127,7 @@ const data = [
      {
     name: "iPhone 17 256 GB Sage",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-sbp-1105-sm-3697_1.webp",
+    image: "./img/tm-dg-sbp-1105-sm-3697_1.webp",
     storage: [
       { size: "128GB", price: 1990 },
       { size: "256GB", price: 2339 },
@@ -139,7 +139,7 @@ const data = [
     {
     name: "iPhone 16 256 GB Ultramarine",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-sbp-1105-sm-2892_1.png",
+    image: "./img/tm-dg-sbp-1105-sm-2892_1.png",
     storage: [
 
       { size: "256GB", price: 2169 },
@@ -151,7 +151,7 @@ const data = [
   {
     name: "Samsung Galaxy Z Flip7 (F766) 12/256 GB Dark Blue",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-sbp-1105-sm-3595_10.png",
+    image: "./img/tm-dg-sbp-1105-sm-3595_10.png",
     storage: [
       { size: "128GB", price: 1980 },
       { size: "256GB", price: 2219 },
@@ -162,7 +162,7 @@ const data = [
    {
     name: "Qulaqlıq HUAWEI FreeBuds 7i 55038456 Black",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-acs-1109-tw-0831_1.png",
+    image: "./img/tm-dg-acs-1109-tw-0831_1.png",
     storage: [
       {  price: 159.99}
     ]
@@ -172,7 +172,7 @@ const data = [
     {
     name: "Qoruyucu şüşə 5D Glass Full Black iPhone 12 Pro Max",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/_1000_-__1.jpg",
+    image: "./img/_1000_-__1.jpg",
     storage: [
         { price: 3 }
    
@@ -181,7 +181,7 @@ const data = [
    {
     name: "Smart saat Samsung Galaxy Watch8 SM-L330NDAACIS Dark Gray",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-smw-1106-sw-0327_111_1.png",
+    image: "./img/tm-dg-smw-1106-sw-0327_111_1.png",
     storage: [
       {  price: 639 },
       
@@ -193,7 +193,7 @@ const data = [
     {
     name: "Apple Watch Series 10 46 mm Aluminum case Rose Gold",
     rating: 4.5,
-    image: "http://127.0.0.1:5500/img/t5J3Xl52RbAWBz9YrRN8h6I8lipGGdglz0nlsY37-full.jpg",
+    image: "./img/t5J3Xl52RbAWBz9YrRN8h6I8lipGGdglz0nlsY37-full.jpg",
     storage: [
        { size: "", price: 800 }
     ]
@@ -204,7 +204,7 @@ const data = [
     {
     name: "Qoruyucu şüşə Alpa-tech Premium Glass iPhone 14 Pro Max",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-acs-1267-pt-0585_3333.png",
+    image: "./img/tm-dg-acs-1267-pt-0585_3333.png",
     storage: [
       { price: 8.99 }
     ]
@@ -214,7 +214,7 @@ const data = [
    {
     name: "Qoruyucu örtük Samsung S25+ Standing Grip EF-GS936CBEGRU",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-acs-1267-kt-2439_1.png",
+    image: "./img/tm-dg-acs-1267-kt-2439_1.png",
     storage: [
       {price: 75 }
     ]
@@ -224,7 +224,7 @@ const data = [
     {
     name: "HONOR X9d 12/256 GB Titanium Black",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-sbp-1105-sm-3854_1.png",
+    image: "./img/tm-dg-sbp-1105-sm-3854_1.png",
     storage: [
       { size: "256GB", price: 859 }
     ]
@@ -233,7 +233,7 @@ const data = [
       {
     name: "OPPO A5i 4/128 GB CPH2773 Starry Purple",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-sbp-1105-sm-3639_1.png",
+    image: "./img/tm-dg-sbp-1105-sm-3639_1.png",
     storage: [
       { size: "128GB", price: 309 }
     ]
@@ -244,7 +244,7 @@ const data = [
   {
     name: "Qulaqlıq Nothing CMF Buds 2A A10600109 Light Grey",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-acs-1109-tw-0883_1-8e99f1cf.webp",
+    image: "./img/tm-dg-acs-1109-tw-0883_1-8e99f1cf.webp",
     storage: [
       { price: 69.99 }
     ]
@@ -255,7 +255,7 @@ const data = [
     {
     name: "HUAWEI nova 14i 8/128 GB Black",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-sbp-1105-sm-3867_1.png",
+    image: "./img/tm-dg-sbp-1105-sm-3867_1.png",
     storage: [
       { size: "128GB", price: 419 },
       { size: "256GB", price: 560 },
@@ -267,7 +267,7 @@ const data = [
   {
     name: "Qoruyucu örtük Apple iPhone 17 Pro TechWoven W/MagSafe MGF54ZM/A Purple",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-acs-1267-kt-2540_1.png",
+    image: "./img/tm-dg-acs-1267-kt-2540_1.png",
     storage: [
       { price: 139 }
     ]
@@ -276,7 +276,7 @@ const data = [
    {
     name: "Qoruyucu örtük Lacoste MagSafe Silicone iPhone 15 Pro Max Black LCHMP15XSLOK",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-acs-1267-kt-2230_1_1.png",
+    image: "./img/tm-dg-acs-1267-kt-2230_1_1.png",
     storage: [
       { price: 49.99 }
     ]
@@ -289,7 +289,7 @@ const data = [
   {
     name: "Qoruyucu örtük Beats iPhone 17 MGK44LL/A W/MagSafe and Camera Control Pebble Pink",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-acs-1267-kt-2589_1.png",
+    image: "./img/tm-dg-acs-1267-kt-2589_1.png",
     storage: [
       { price: 94.99 }
     ]
@@ -299,7 +299,7 @@ const data = [
   {
     name: "Qoruyucu örtük Apple iPhone 16 Pro Silicone Case W/MagSafe Plum MYYM3ZM/A",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-acs-1267-kt-2371.png",
+    image: "./img/tm-dg-acs-1267-kt-2371.png",
     storage: [
       {  price: 94 }
 
@@ -311,7 +311,7 @@ const data = [
     {
     name: "Motorola edge 60 Pro 5G 12/512 GB Shadow",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-sbp-1105-sm-3573_1.webp",
+    image: "./img/tm-dg-sbp-1105-sm-3573_1.webp",
     storage: [
       { size: "128GB", price: 720 },
       { size: "256GB", price: 978 },
@@ -324,7 +324,7 @@ const data = [
    {
     name: "OPPO A5 6/128 GB CPH2727 Mist White",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-sbp-1105-sm-3640_.png",
+    image: "./img/tm-dg-sbp-1105-sm-3640_.png",
     storage: [
       { size: "128GB", price: 399 },
       { size: "256GB", price: 470 },
@@ -335,7 +335,7 @@ const data = [
     {
     name: "HONOR X9d 8/256 GB Forest Green",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-sbp-1105-sm-3852_1.png",
+    image: "./img/tm-dg-sbp-1105-sm-3852_1.png",
     storage: [
           { size: "128GB", price: 590 },
       { size: "256GB", price: 779 },
@@ -346,7 +346,7 @@ const data = [
     {
     name: "Adapter Hypercharge Combo 120W",
     rating: 4,
-    image: "http://127.0.0.1:5500/img/tm-dg-acs-1109-ap-0424_1-103525e9.webp",
+    image: "./img/tm-dg-acs-1109-ap-0424_1-103525e9.webp",
     storage: [
       {price: 69.99 }
     ]
@@ -493,51 +493,6 @@ document.addEventListener("click", function(e) {
 });
 
 
-// sebete elave olunmasi
-
-// document.addEventListener("click", function(e) {
-//   if (e.target.closest(".btn")) {
-
-//     const card = e.target.closest(".card");
-
-//     const name = card.querySelector("h5").innerText;
-//     const price = card.querySelector(".price").innerText;
-//     const image = card.querySelector("img").src;
-
-//     const product = { name, price, image };
-
-//     let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-//     cart.push(product);
-
-//     localStorage.setItem("cart", JSON.stringify(cart));
-
-//     alert("Məhsul səbətə əlavə olundu ✅");
-//   }
-// });
-
-
-
-// const cartContainer = document.getElementById("cart-items");
-
-// if (cartContainer) {
-//   let cart = JSON.parse(localStorage.getItem("cart")) || "";
-
-//   let html = "";
-
-//   cart.forEach(item => {
-//     html += `
-//       <div class="cart-item">
-//         <img src="${item.image}" width="100">
-//         <h4>${item.name}</h4>
-//         <p>${item.price}</p>
-//       </div>
-//     `;
-//   });
-
-//   cartContainer.innerHTML = html;
-// }
-
 
 
 
@@ -651,4 +606,41 @@ document.addEventListener("change", function (e) {
   if (e.target.classList.contains("select-item")) {
     updateDeleteButton();
   }
+});
+
+
+// sebet secilmis mehsullar
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const buttons = document.querySelectorAll(".wow-card .add-cart");
+
+  buttons.forEach(button => {
+
+    button.addEventListener("click", (e) => {
+
+      const card = e.target.closest(".wow-card");
+
+      if (!card) return;
+
+      const product = {
+        name: card.querySelector("h3")?.innerText,
+        price: Number(card.querySelector("p")?.innerText.replace("₼", "").trim()),
+        image: card.querySelector(".wow-main")?.src,
+        rating: 5,
+        storage: ""
+      };
+
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      cart.push(product);
+
+      localStorage.setItem("cart", JSON.stringify(cart));
+
+      showToast("Məhsul səbətə əlavə olundu ✅");
+    });
+
+  });
+
 });
