@@ -164,7 +164,7 @@ const data = [
     rating: 4,
     image: "./img/tm-dg-acs-1109-tw-0831_1.png",
     storage: [
-      {  price: 159.99}
+      { size: "", price: 159.99}
     ]
 
   },
@@ -174,7 +174,7 @@ const data = [
     rating: 4,
     image: "./img/_1000_-__1.jpg",
     storage: [
-        { price: 3 }
+        { size: "", price: 3 }
    
     ]
   },  
@@ -183,8 +183,9 @@ const data = [
     rating: 4,
     image: "./img/tm-dg-smw-1106-sw-0327_111_1.png",
     storage: [
-      {  price: 639 },
+   
       
+         { size: "", price: 639 }
     ]
 
   },
@@ -206,7 +207,7 @@ const data = [
     rating: 4,
     image: "./img/tm-dg-acs-1267-pt-0585_3333.png",
     storage: [
-      { price: 8.99 }
+      { size: "", price: 8.99 }
     ]
 
   }, 
@@ -216,7 +217,7 @@ const data = [
     rating: 4,
     image: "./img/tm-dg-acs-1267-kt-2439_1.png",
     storage: [
-      {price: 75 }
+      { size: "", price: 75 }
     ]
 
   },  
@@ -246,7 +247,7 @@ const data = [
     rating: 4,
     image: "./img/tm-dg-acs-1109-tw-0883_1-8e99f1cf.webp",
     storage: [
-      { price: 69.99 }
+      { size: "", price: 69.99 }
     ]
 
   }, 
@@ -269,7 +270,7 @@ const data = [
     rating: 4,
     image: "./img/tm-dg-acs-1267-kt-2540_1.png",
     storage: [
-      { price: 139 }
+      { size: "", price: 139 }
     ]
   }, 
   
@@ -278,7 +279,7 @@ const data = [
     rating: 4,
     image: "./img/tm-dg-acs-1267-kt-2230_1_1.png",
     storage: [
-      { price: 49.99 }
+      { size: "", price: 49.99 }
     ]
 
   }, 
@@ -291,7 +292,7 @@ const data = [
     rating: 4,
     image: "./img/tm-dg-acs-1267-kt-2589_1.png",
     storage: [
-      { price: 94.99 }
+      { size: "", price: 94.99 }
     ]
 
   },
@@ -301,7 +302,7 @@ const data = [
     rating: 4,
     image: "./img/tm-dg-acs-1267-kt-2371.png",
     storage: [
-      {  price: 94 }
+      { size: "", price: 94 }
 
     ]
 
@@ -348,7 +349,7 @@ const data = [
     rating: 4,
     image: "./img/tm-dg-acs-1109-ap-0424_1-103525e9.webp",
     storage: [
-      {price: 69.99 }
+      {size: "", price: 69.99 }
     ]
 
   }
