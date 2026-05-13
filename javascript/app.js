@@ -170,14 +170,15 @@ const data = [
   },
   
     {
-    name: "Qoruyucu şüşə 5D Glass Full Black iPhone 12 Pro Max",
+    name: "Saat Casio LTP-V007G-9EUDF",
     rating: 4,
-    image: "./img/_1000_-__1.jpg",
+    image: "./img/tm-dg-wch-1106-wt-0871-1.png",
     storage: [
-        { size: "", price: 3 }
-   
+      { size: "", price: 89.99}
     ]
-  },  
+
+  },
+  ,  
    {
     name: "Smart saat Samsung Galaxy Watch8 SM-L330NDAACIS Dark Gray",
     rating: 4,
