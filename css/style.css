@@ -235,19 +235,17 @@
 
 /* animasiya */
 
-
-.burger.active span:nth-child(1) {
-  transform: translateY(6.5px) rotate(50deg);
+.burger.active .icon-bar:nth-child(1) {
+  transform: translateY(11px) rotate(45deg);
 }
 
-.burger.active span:nth-child(2) {
+.burger.active .icon-bar:nth-child(2) {
   opacity: 0;
 }
 
-.burger.active span:nth-child(3) {
-  transform: translateY(-15px) rotate(-50deg);
+.burger.active .icon-bar:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg);
 }
-
 /* Bootstrap-i sıfırla */
 
 
@@ -460,8 +458,22 @@
 
 }
 
+/* mehsullar< */
 
+/* Desktopda gizlət */
+.submenu-toggle {
+  display: none;
+}
 
+/* Burger menyu (mobile) */
+@media (max-width: 992px) {
+  .submenu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
 
 /* default (desktop) */
 
@@ -1593,6 +1605,7 @@ background: radial-gradient(circle at top, #1f1f1f, #1b1a1a);
   color: #000;
   transition: 0.3s;
 }
+
 /* sebet */
 
 

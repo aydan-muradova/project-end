@@ -485,7 +485,22 @@
 
 }
 
+/* mehsullar< */
 
+/* Desktopda gizlət */
+.submenu-toggle {
+  display: none;
+}
+
+/* Burger menyu (mobile) */
+@media (max-width: 992px) {
+  .submenu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
 
 /* default */
 .mobile-search {

@@ -178,7 +178,7 @@ const data = [
     ]
 
   },
-  ,  
+  
    {
     name: "Smart saat Samsung Galaxy Watch8 SM-L330NDAACIS Dark Gray",
     rating: 4,

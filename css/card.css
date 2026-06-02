@@ -193,7 +193,7 @@
 }
 
 .hero-btn {
-    text-decoration: none;
+  text-decoration: none;
   color: white;
   font-family: "Geologica", sans-serif;
   background: linear-gradient(135deg, #FFA500, #ff6a00);
@@ -485,7 +485,22 @@
 
 }
 
+/* mehsullar< */
 
+/* Desktopda gizlət */
+.submenu-toggle {
+  display: none;
+}
+
+/* Burger menyu (mobile) */
+@media (max-width: 992px) {
+  .submenu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
 
 /* default */
 .mobile-search {
@@ -537,11 +552,12 @@
 
 
 body {
-  padding-top: 70px; /* navbar hündürlüyünə uyğun */
+  padding-top: 70px;
+  /* navbar hündürlüyünə uyğun */
 }
 
 .cart-actions {
-  
+
   display: flex;
   gap: 10px;
   margin-top: 20px;
@@ -578,6 +594,7 @@ body {
   left: 10px;
   transform: scale(1.2);
 }
+
 #cart-container {
   margin-top: 30px;
   display: grid;
@@ -598,7 +615,7 @@ body {
 
 
   padding: 18px 22px;
-width:250px;
+  width: 250px;
 
   background: #111;
   color: #fff;
@@ -613,19 +630,27 @@ width:250px;
 
   border: 1px solid #2a2a2a;
 
-  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 
   transition: 0.25s ease;
 }
+
 .cart-total:hover {
   transform: translateY(-2px);
-  border-color: #ff9800; /* narıncı highlight */
-  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  border-color: #ff9800;
+  /* narıncı highlight */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
 }
 
 
 
+@media (max-width: 992px) {
+  body {
+    padding-top: 80px;
+    /* navbar hündürlüyünə uyğun */
+  }
 
+}
 
 /* footer */
 
@@ -649,7 +674,8 @@ width:250px;
   left: 0;
   transform: translate(-50%, -50%);
   opacity: 0.2;
-  pointer-events: none; /* kliklərə mane olmasın */
+  pointer-events: none;
+  /* kliklərə mane olmasın */
 }
 
 /* container */
@@ -710,7 +736,7 @@ width:250px;
   display: flex;
   max-width: 400px;
   margin: 15px auto 0;
-background: radial-gradient(circle at top, #1f1f1f, #1b1a1a);
+  background: radial-gradient(circle at top, #1f1f1f, #1b1a1a);
   border-radius: 50px;
   overflow: hidden;
 }
@@ -757,10 +783,11 @@ background: radial-gradient(circle at top, #1f1f1f, #1b1a1a);
 
 @media (max-width: 600px) {
   .footer-container {
-    grid-template-columns:  repeat(2, 1fr);
-  
+    grid-template-columns: repeat(2, 1fr);
+
   }
 }
+
 @media (max-width: 500px) {
 
   .footer-container {
@@ -769,44 +796,54 @@ background: radial-gradient(circle at top, #1f1f1f, #1b1a1a);
 
   /* Mobix olan hissə (1-ci col) */
   .footer-col:first-child {
-    grid-column: 1 / -1; /* bütün sətri tutsun */
+    grid-column: 1 / -1;
+    /* bütün sətri tutsun */
     text-align: center;
   }
 
 }
+
 @media (max-width: 400px) {
-.newsletter-box button {
-  background: linear-gradient(135deg, #FFA500, #ff6a00);
-  border: none;
-  padding: 10px 10px;
-  color: white;
-  cursor: pointer;
-}
-.newsletter-box {
-  display: flex;
-  max-width: 300px;
-  margin: 15px auto 0;
-background: radial-gradient(circle at top, #1f1f1f, #1b1a1a);
-  border-radius: 50px;
-  overflow: hidden;
-}
-.newsletter-box  input, .newsletter-box button{
-  font-size: 14px;
-}
-.footer-col h4, .footer-col .logo, .footer-newsletter h4 {
-  font-size: 19px;
-}
+  .newsletter-box button {
+    background: linear-gradient(135deg, #FFA500, #ff6a00);
+    border: none;
+    padding: 10px 10px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .newsletter-box {
+    display: flex;
+    max-width: 300px;
+    margin: 15px auto 0;
+    background: radial-gradient(circle at top, #1f1f1f, #1b1a1a);
+    border-radius: 50px;
+    overflow: hidden;
+  }
+
+  .newsletter-box input,
+  .newsletter-box button {
+    font-size: 14px;
+  }
+
+  .footer-col h4,
+  .footer-col .logo,
+  .footer-newsletter h4 {
+    font-size: 19px;
+  }
 
 }
+
 @media (max-width: 351px) {
 
 
   .footer-newsletter {
     margin: 30px 10px;
-    
+
   }
+
   .newsletter-box {
-    flex-direction: column; 
+    flex-direction: column;
     border-radius: 20px;
   }
 
@@ -820,7 +857,7 @@ background: radial-gradient(circle at top, #1f1f1f, #1b1a1a);
   .newsletter-box button {
     width: 100%;
     padding: 12px;
-  } 
+  }
 
 }
 
@@ -837,6 +874,7 @@ background: radial-gradient(circle at top, #1f1f1f, #1b1a1a);
     padding: 0 45px;
   }
 }
+
 @media (max-width: 370px) {
   .container {
 
@@ -861,7 +899,7 @@ background: radial-gradient(circle at top, #1f1f1f, #1b1a1a);
   margin-top: auto;
 }
 
-#toast{
+#toast {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -876,6 +914,6 @@ background: radial-gradient(circle at top, #1f1f1f, #1b1a1a);
   font-weight: 600;
 }
 
-#toast.show{
+#toast.show {
   opacity: 1;
 }

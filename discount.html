@@ -48,6 +48,9 @@
           <li><a href="./index.html">Ana səhifə</a></li>
           <li class="pages">
             <a href="./product.html">Məhsullar</a>
+            <span class="submenu-toggle">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
             <ul class="dropdown-menu">
               <!-- <li><a href="./category.html">Kateqoriyalar</a></li> -->
               <li><a href="./new.html">Yenilər</a></li>
@@ -100,7 +103,7 @@
 
       <div class="slide slide1 active"
         style="background-image:url('./img/discount-img/Image\ Apr\ 27\,\ 2026\,\ 06_21_35\ PM.png')">
-     
+
       </div>
 
       <div class="slide" style="background-image:url('./img/discount-img/Image\ Apr\ 27\,\ 2026\,\ 10_45_36\ PM.png')">
@@ -109,7 +112,7 @@
 
       <div class="slide slide3"
         style="background-image:url('./img/discount-img/Image\ Apr\ 27\,\ 2026\,\ 01_40_59\ PM.png')">
-  
+
       </div>
 
     </div>
@@ -159,10 +162,10 @@
 
         <div class="filter-options ">
 
-         <button class="price-filter" data-min="0" data-max="500">0 - 500 ₼</button>
-<button class="price-filter" data-min="500" data-max="1000">500 - 1000 ₼</button>
-<button class="price-filter" data-min="1000" data-max="2000">1000 - 2000 ₼</button>
-<button class="price-filter" data-min="2000" data-max="999999">2000 ₼ +</button>
+          <button class="price-filter" data-min="0" data-max="500">0 - 500 ₼</button>
+          <button class="price-filter" data-min="500" data-max="1000">500 - 1000 ₼</button>
+          <button class="price-filter" data-min="1000" data-max="2000">1000 - 2000 ₼</button>
+          <button class="price-filter" data-min="2000" data-max="999999">2000 ₼ +</button>
         </div>
       </div>
 
@@ -252,7 +255,7 @@
         <img src=".//img/discount-img/p2.webp" alt="">
 
         <!-- NAME -->
-        <h3 class="name">Qulaqlıq SVEN E-315B SV-022631 Black</h3>
+        <h3 class="name">Qulaqlıq SVEN E-315B  &nbsp; SV-022631 Black</h3>
 
         <!-- STARS -->
         <div class="stars">★★★★★</div>
@@ -307,7 +310,7 @@
         <img src=".//img/discount-img/p3.png" alt="">
 
         <!-- NAME -->
-        <h3 class="name">Nokia 235 DS AZGEUA &nbsp; &nbsp;&nbsp; Black</h3>
+        <h3 class="name">Nokia  &nbsp;235 DS  &nbsp; AZGEUA  &nbsp; Black</h3>
 
         <!-- STARS -->
         <div class="stars">★★★★★</div>
@@ -323,7 +326,7 @@
           <div class="storage">
             <span class="storage-btn active" data-price="152">128GB</span>
             <span class="storage-btn" data-price="200">256GB</span>
-      
+
           </div>
 
         </div>
@@ -379,7 +382,7 @@
             <span class="new-price">84.99 ₼</span>
           </div>
 
- 
+
 
         </div>
 
@@ -645,7 +648,7 @@
 
 
 
-  
+
 
   <!-- novbeti -->
   <div class="countdown">
@@ -883,14 +886,14 @@
   </footer>
 
 
-<div id="toast"></div>
+  <div id="toast"></div>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
 
       // Hamburger toggle (mobile)
       const burger = document.querySelector(".burger");
-      const headBox = document.querySelector(".head-box ul");
+      const headBox = document.querySelector(".navbar-container ul");
 
       burger.addEventListener("click", function () {
         headBox.classList.toggle("active");
@@ -903,32 +906,32 @@
       });
 
       // Pages və Blog alt menyular (mobile)
-      const submenuLinks = document.querySelectorAll(".pages > a, .blog > a");
+      // const submenuLinks = document.querySelectorAll(".pages > a, .blog > a");
 
-      submenuLinks.forEach(link => {
-        link.addEventListener("click", function (e) {
-          if (window.innerWidth <= 992) { // Mobile
-            e.preventDefault();
-            const submenu = this.nextElementSibling;
+      // submenuLinks.forEach(link => {
+      //   link.addEventListener("click", function (e) {
+      //     if (window.innerWidth <= 992) { // Mobile
+      //       e.preventDefault();
+      //       const submenu = this.nextElementSibling;
 
-            if (!submenu) return;
+      //       if (!submenu) return;
 
-            // Əvvəlki açıq submenu-ları bağla
-            document.querySelectorAll(".pages ul, .blog ul").forEach(sm => {
-              if (sm !== submenu) {
-                sm.style.maxHeight = "0px";
-              }
-            });
+      //       // Əvvəlki açıq submenu-ları bağla
+      //       document.querySelectorAll(".pages ul, .blog ul").forEach(sm => {
+      //         if (sm !== submenu) {
+      //           sm.style.maxHeight = "0px";
+      //         }
+      //       });
 
-            // Toggle bu submenu
-            if (submenu.style.maxHeight && submenu.style.maxHeight !== "0px") {
-              submenu.style.maxHeight = "0px";
-            } else {
-              submenu.style.maxHeight = submenu.scrollHeight + "px";
-            }
-          }
-        });
-      });
+      // Toggle bu submenu
+      //       if (submenu.style.maxHeight && submenu.style.maxHeight !== "0px") {
+      //         submenu.style.maxHeight = "0px";
+      //       } else {
+      //         submenu.style.maxHeight = submenu.scrollHeight + "px";
+      //       }
+      //     }
+      //   });
+      // });
 
       // Responsive üçün: window resize zamanı maxHeight sıfırla
       window.addEventListener("resize", function () {
@@ -947,9 +950,11 @@
     });
   </script>
 
+
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const navLinks = document.querySelectorAll(".head-box ul li a");
+      const navLinks = document.querySelectorAll(".navbar-container ul li a");
 
       let currentPage = window.location.pathname.split("/").pop();
 
@@ -988,38 +993,89 @@
 
 
 
-
-
     document.addEventListener("DOMContentLoaded", () => {
 
-      // ================= BURGER =================
       const burger = document.querySelector(".burger");
       const menu = document.querySelector(".navbar-container ul");
 
+      // ================= BURGER OPEN / CLOSE =================
       burger.addEventListener("click", () => {
         burger.classList.toggle("active");
         menu.classList.toggle("active");
-      });
 
-      // ================= DROPDOWN =================
-      const productLink = document.querySelector(".pages > a");
-      const dropdown = document.querySelector(".pages .dropdown-menu");
-
-      productLink.addEventListener("click", (e) => {
-        if (window.innerWidth <= 992) {
-          e.preventDefault();
-          dropdown.classList.toggle("active");
+        if (menu.classList.contains("active")) {
+          menu.classList.remove("active");
+          menu.style.maxHeight = "0px";
+        } else {
+          menu.classList.add("active");
+          menu.style.maxHeight = menu.scrollHeight + "px";
         }
       });
+      document.addEventListener("DOMContentLoaded", () => {
+        // ================= SUBMENU (pages / blog) =================
+        const submenuLinks = document.querySelectorAll(".pages > a, .blog > a");
+
+        submenuLinks.forEach(link => {
+          link.addEventListener("click", (e) => {
+            if (window.innerWidth <= 992) {
+              e.preventDefault();
+
+              const submenu = link.nextElementSibling;
+              if (!submenu) return;
+
+              if (submenu.style.maxHeight && submenu.style.maxHeight !== "0px") {
+                submenu.style.maxHeight = "0px";
+              } else {
+                submenu.style.maxHeight = submenu.scrollHeight + "px";
+              }
+            }
+          });
+        });
+
+        // ================= RESET ON RESIZE =================
+        window.addEventListener("resize", () => {
+          if (window.innerWidth > 992) {
+            menu.classList.remove("active");
+            menu.style.maxHeight = null;
+
+            document.querySelectorAll(".pages ul, .blog ul").forEach(sm => {
+              sm.style.maxHeight = null;
+            });
+          } else {
+            if (!menu.classList.contains("active")) {
+              menu.style.maxHeight = "0px";
+            }
+          }
+        });
+
+      });
+
+
+      // ================= DROPDOWN =================
+      // ================= DROPDOWN =================
+      const toggle = document.querySelector(".submenu-toggle");
+      const dropdown = document.querySelector(".pages .dropdown-menu");
+
+      if (toggle) {
+        toggle.addEventListener("click", (e) => {
+          e.stopPropagation();
+
+          if (dropdown.style.maxHeight && dropdown.style.maxHeight !== "0px") {
+            dropdown.style.maxHeight = "0px";
+          } else {
+            dropdown.style.maxHeight = dropdown.scrollHeight + "px";
+          }
+        });
+      }
 
     });
   </script>
 
 
 
-<script src="./javascript/cart.js"></script>
-<script src="./javascript/search.js"></script>
-<script src="./javascript/discount.js"></script>
+  <script src="./javascript/cart.js"></script>
+  <script src="./javascript/search.js"></script>
+  <script src="./javascript/discount.js"></script>
 
 
 </body>

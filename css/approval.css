@@ -460,7 +460,22 @@
 
 }
 
+/* mehsullar< */
 
+/* Desktopda gizlət */
+.submenu-toggle {
+  display: none;
+}
+
+/* Burger menyu (mobile) */
+@media (max-width: 992px) {
+  .submenu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
 
 
 /* default (desktop) */
@@ -549,8 +564,8 @@
 /* ===== HEADER ===== */
 
 .favorites-header{
-  padding-top: 210px;
-  padding-bottom: 40px;
+  padding-top: 110px;
+  padding-bottom: 70px;
 
   display: flex;
   flex-direction: column;
@@ -805,6 +820,10 @@ background: radial-gradient(circle at top, #1f1f1f, #1b1a1a);
 }
 .footer-col h4, .footer-col .logo, .footer-newsletter h4 {
   font-size: 19px;
+}
+
+.favorites-title{
+  font-size: 38px;
 }
 
 }
